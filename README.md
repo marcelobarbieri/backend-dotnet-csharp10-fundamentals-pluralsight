@@ -85,4 +85,15 @@ Visual Studio 2022 Editions:
 
 <!-- #endregion -->
 
+<!-- #region Demo: Setting up your environment using Visual Studio -->
+
+<details>
+<summary>Demo: Setting up your environment using Visual Studio</summary>
+
+<br/>
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
