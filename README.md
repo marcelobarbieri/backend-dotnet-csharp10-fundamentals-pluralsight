@@ -96,4 +96,21 @@ Visual Studio 2022 Editions:
 
 <!-- #endregion -->
 
+<!-- #region Building your first C# program using Visual Studio -->
+
+<details>
+<summary>Building your first C# program using Visual Studio</summary>
+
+<br/>
+
+Using projects:
+
+- Containers for code files
+- Compiled into executable files (assembly)
+- Different templates
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
