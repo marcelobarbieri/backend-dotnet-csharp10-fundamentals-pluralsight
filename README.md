@@ -4,6 +4,8 @@ by Gill Cleeren - [Pluralsight](https://www.pluralsight.com/)
 
 https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals/table-of-contents
 
+> The content was organized in the _commits_
+
 <!-- #region Course Overview -->
 
 ## Course Overview
@@ -47,6 +49,37 @@ C# is actively mantained:
 |8.0|2019|
 |9.0|2020|
 |10.0|2021|
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Setting up your environment -->
+
+<details>
+<summary>Setting up your environment</summary>
+
+<br/>
+
+Building .NET applications with C#:
+
+- Visual Studio 2022 (Windows and Mac)
+- .NET CLI and Visual Studio Code (all platforms)
+
+<br/>
+
+Introducing Visual Studio 2022:
+
+- Flagship IDE (Integrated Development)
+- Many features
+
+<br/>
+
+Visual Studio 2022 Editions:
+
+- Community (free to use)
+- Professional (paid, aimed at smaller teams)
+- Enterprise (paid, aimed at larger teams)
 
 </details>
 
