@@ -113,4 +113,39 @@ Using projects:
 
 <!-- #endregion -->
 
+<!-- #region Creating your first C# application -->
+
+<details>
+<summary>Creating your first C# application</summary>
+
+<br/>
+
+- Open Visual Studio 2022
+
+![](./assets/open-visual-studio.png)
+
+- Create a new project
+
+![](./assets/create-a-new-project.png)
+
+- Select C# language, **Console** project type and ConsoleApp (a project for creating a command-line application)
+
+![](./assets/select-csharp-console.png)
+
+- Configure your new project (Project name: HelloFromCSharp, location, solution name)
+
+![](./assets/config-your-new-project.png)
+
+- Additional information (framework .NET 6.0 LTS)
+
+![](./assets/additional-information.png)
+
+- Create and execute the project
+
+![](./assets/execute-project.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
