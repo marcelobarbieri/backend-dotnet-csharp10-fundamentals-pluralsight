@@ -242,4 +242,41 @@ Tip: you can start your application with the debugger using F5
 
 <!-- #endregion -->
 
+<!-- #region Building Applications Using the CLI -->
+
+<details>
+<summary>Building Applications Using the CLI</summary>
+
+<br/>
+
+Understanding the CLI
+
+- Command-line interface for .NET
+- Cross-platform tools
+- "dotnet" command with parameters
+
+Install the .NET SDK
+
+```ps
+dotnet --list-sdks
+```
+
+Open the Windows Terminal
+
+Creating a new project
+
+```ps
+dotnet new console -n "UnderstandingCLI"
+```
+
+| command      | description              |
+| ------------ | ------------------------ |
+| dotnet new   | create a new project     |
+| dotnet build | compile your application |
+| dotnet run   | execute your application |
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
