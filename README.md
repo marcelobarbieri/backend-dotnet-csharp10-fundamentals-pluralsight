@@ -296,4 +296,25 @@ https://learn.microsoft.com/en-us/dotnet/api/
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- C# is an object-oriented and type-safe language to write .NET applications
+- C# is actively maintained
+- C# can be uses to build all types of .NET applications
+- Applications can be created using:
+
+1. Visual Studio
+2. CLI (combined with VS Code)
+
+<br/>
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
