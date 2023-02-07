@@ -206,4 +206,25 @@ Solution Explorer
 
 <!-- #endregion -->
 
+<!-- #region Debugging Our Code -->
+
+<details>
+<summary>Debugging Our Code</summary>
+
+<br/>
+
+Introducing Breakpoints
+
+- Pause the running code
+- Inspect the state of the running application
+- Step through the different lines of code
+
+Running with the Debugging Attached
+
+![](./assets/running-debugging-attached.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
