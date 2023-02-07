@@ -318,3 +318,29 @@ https://learn.microsoft.com/en-us/dotnet/api/
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Learning the C# Syntax -->
+
+## Learning the C# Syntax
+
+<!-- #region Module Introduction -->
+
+<details>
+<summary>Module Introduction</summary>
+
+<br/>
+
+Agenda:
+
+- Understanding the essential C# building blocks
+- Working with built-in types
+- C# operators
+- Using date and time
+- Converting between types
+- Implicit typing
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
