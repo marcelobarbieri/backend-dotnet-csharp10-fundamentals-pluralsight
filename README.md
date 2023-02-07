@@ -148,4 +148,37 @@ Using projects:
 
 <!-- #endregion -->
 
+<!-- #region Demo: Writing C# Code -->
+
+<details>
+<summary>Demo: Writing C# Code</summary>
+
+<br/>
+
+Program.cs
+```c#
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello everybody!");
+
+Console.WriteLine("Please enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine($"Hello {name}");
+```
+
+Console
+```ps
+Hello everybody!
+Please enter your name:
+Marcelo
+Hello Marcelo
+
+D:\Dev\WIP\CSharp10 Fundamentals Pluralsight\projects\HelloFromCSharp\HelloFromCSharp\bin\Debug\net6.0\HelloFromCSharp.exe (process 22516) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
