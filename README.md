@@ -156,6 +156,7 @@ Using projects:
 <br/>
 
 Program.cs
+
 ```c#
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello everybody!");
@@ -166,6 +167,7 @@ Console.WriteLine($"Hello {name}");
 ```
 
 Console
+
 ```ps
 Hello everybody!
 Please enter your name:
@@ -176,6 +178,29 @@ D:\Dev\WIP\CSharp10 Fundamentals Pluralsight\projects\HelloFromCSharp\HelloFromC
 To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
 Press any key to close this window . . .
 ```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo: Exploring the Files in a C# application -->
+
+<details>
+<summary>Demo: Exploring the Files in a C# application</summary>
+
+<br/>
+
+Looking at the generated files
+
+- Project
+- Solution
+- Executable file
+
+Executing our compiled application
+
+Solution Explorer
+
+![](./assets/exploring-the-files.png)
 
 </details>
 
