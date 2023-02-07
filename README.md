@@ -227,4 +227,19 @@ Running with the Debugging Attached
 
 <!-- #endregion -->
 
+<!-- #region Demo: Debugging in Visual Studio -->
+
+<details>
+<summary>Demo: Debugging in Visual Studio</summary>
+
+<br/>
+
+Understanding the debugger
+
+Tip: you can start your application with the debugger using F5
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
