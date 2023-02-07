@@ -279,4 +279,21 @@ dotnet new console -n "UnderstandingCLI"
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using the Docs -->
+
+<details>
+<summary>Demo: Using the Docs</summary>
+
+<br/>
+
+Finding information in the docs:
+
+https://learn.microsoft.com/pt-br/dotnet/csharp/
+
+https://learn.microsoft.com/en-us/dotnet/api/
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
