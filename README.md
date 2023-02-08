@@ -622,4 +622,31 @@ hoursWorked = 148;
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using Constant Values -->
+
+<details>
+<summary>Demo: Using Constant Values</summary>
+
+<br/>
+
+Using a const value
+
+```c#
+const decimal interestRate = 0.07m;
+```
+
+Program.cs
+
+```c#
+const double interestRate = 0.07;
+
+interestRate = 0.08;
+
+// CS0131: The left-hand side of an assignment must be a variable, property or indexer
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
