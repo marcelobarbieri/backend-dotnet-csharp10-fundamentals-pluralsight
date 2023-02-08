@@ -801,4 +801,32 @@ Top paid employee!
 
 <!-- #endregion -->
 
+<!-- #region Members On Primitive Types -->
+
+<details>
+<summary>Members On Primitive Types</summary>
+
+<br/>
+
+Members On Primitive Types
+
+```c#
+int intMaxValue = int.MaxValue;
+int intMinValue = int.MinValue;
+double doubleMaxValue = double.MaxValue;
+```
+
+Member of char Type
+
+```c#
+char myChar = 'a';
+bool isWhiteSpace = char.IsWhiteSpace(myChar);
+bool isDigit = char.IsDigit(myChar);
+bool isPunctuation = char.IsPunctuation(myChar);
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
