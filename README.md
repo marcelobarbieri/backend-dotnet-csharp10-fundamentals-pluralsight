@@ -479,4 +479,43 @@ Console.WriteLine(age);
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using the Essential C# Building Blocks -->
+
+<details>
+<summary>Demo: Using the Essential C# Building Blocks</summary>
+
+<br/>
+
+Creating a new project called `BethanyPieShopHRM`
+
+> [Projeto BethanyPieShopHRM](./projects/BethanyPieShopHRM/)
+
+Program.cs
+
+```c#
+/*
+ * Here are some tests around working with valid identifiers in C#
+ * We can write here as much as we want, this is all comment
+ */
+
+Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
+
+Console.WriteLine("Please enter your name:");
+
+//The following will accept the name
+string name = Console.ReadLine();
+
+string name2 = Console.ReadLine();
+
+string name_2 = Console.ReadLine();
+
+string Name_2 = Console.ReadLine();
+
+//string 2Name = Console.ReadLine();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
