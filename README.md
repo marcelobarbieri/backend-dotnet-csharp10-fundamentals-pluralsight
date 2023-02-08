@@ -752,4 +752,53 @@ string result2 = "a" * "b"; // wrong
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using Operators in C# -->
+
+<details>
+<summary>Demo: Using Operators in C#</summary>
+
+<br/>
+
+Using operators in C#
+
+- Default values for types in C#
+
+Program.cs
+
+```c#
+int bonus = 1000;
+
+double ratePerHour = 12.34;
+int numberOfHoursWorked = 165;
+
+double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
+Console.WriteLine(currentMonthWage); // 3036,1
+
+ratePerHour += 3; // ratePerHour = ratePerHour + 3;
+Console.WriteLine(ratePerHour); // 15,34
+
+if (currentMonthWage > 2000) // 3036,1
+    Console.WriteLine("Top paid employee!");
+
+int numberOfEmployees = 15;
+numberOfEmployees--; // 14
+
+bool a; // false
+int b; // 0
+
+Console.ReadLine();
+```
+
+Console
+
+```ps
+3036,1
+15,34
+Top paid employee!
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
