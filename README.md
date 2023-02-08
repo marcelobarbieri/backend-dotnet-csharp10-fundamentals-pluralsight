@@ -343,4 +343,140 @@ Agenda:
 
 <!-- #endregion -->
 
+<!-- #region Understanding the Essential C# Building Blocks -->
+
+<details>
+<summary>Understanding the Essential C# Building Blocks</summary>
+
+<br/>
+
+C# Statements:
+
+- Actions
+- Flow of the program
+- End with semicolon
+
+```c#
+Console.WriteLine("Hello, World!");
+```
+
+<br/>
+
+C# Identifiers:
+
+Identifiers start with a letter or underscore and can contain letters, digits and underscore.
+
+```c#
+string input = Console.ReadLine();
+string 2_input = Console.ReadLine(); // wrong
+```
+
+<br/>
+
+### C# Comments
+
+- Single line comments:
+
+Program.cs
+
+```c#
+// The next line will read a value from the console
+string input = Console.ReadLine();
+```
+
+- Multiline comments:
+
+Program.cs
+
+```c#
+/*
+   In the next block of code,
+   we will read a value from the console
+ */
+string input = Console.ReadLine();
+```
+
+<br/>
+
+C# Keywords (about 70)
+
+|         |          |
+| ------- | -------- |
+| `int`   | `ref`    |
+| `in`    | `return` |
+| `class` | `lock`   |
+| `using` | `long`   |
+| `while` | `string` |
+| `new`   | `struct` |
+| `null`  | `const`  |
+| `if`    | `enum`   |
+| `case`  | `void`   |
+
+<br/>
+
+C# Variables
+
+|           |                                    |
+| --------- | ---------------------------------- |
+| _x_       | A variable holds a value           |
+| _[1,2,3]_ | Integer, string, date ...          |
+| {}        | Created in a declaration statement |
+
+<br/>
+
+Creating an Integer Variable
+
+```c#
+int age;
+```
+
+| Type | Identifier |
+| ---- | ---------- |
+| int  | age        |
+
+<br/>
+
+C# is case sensitive, diferente variables:
+
+```c#
+int age;
+int Age;
+```
+
+<br/>
+
+Camel Case:
+
+Variable with many words.
+The first word will always be lowercase and all subsequent words start with an uppercase.
+
+```c#
+int ageOfEmployee;
+```
+
+<br/>
+
+Assignment a value to a variable:
+
+```c#
+int age;
+age = 25;
+```
+
+| Assignment operator | Value |
+| :-----------------: | :---: |
+|         `=`         |  25   |
+
+<br/>
+
+Using the Variable:
+
+```c#
+Console.WriteLine(age);
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
