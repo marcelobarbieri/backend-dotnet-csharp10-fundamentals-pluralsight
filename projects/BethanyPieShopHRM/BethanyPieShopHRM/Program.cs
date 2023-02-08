@@ -1,19 +1,18 @@
-﻿/*
- * Here are some tests around working with valid identifiers in C#
- * We can write here as much as we want, this is all comment
- */
+﻿int monthlyWage = 1234;
 
-Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
+// monthlyWage = true; // wrong
 
-Console.WriteLine("Please enter your name:");
+int months = 12, bonus = 1000;
 
-//The following will accept the name
-string name = Console.ReadLine();
+bool isActive = true;
 
-string name2 = Console.ReadLine();
+double rating = 99.25;
 
-string name_2 = Console.ReadLine();
+byte numberOfEmployees = 155;
 
-string Name_2 = Console.ReadLine();
 
-//string 2Name = Console.ReadLine();
+int hoursWorked;
+
+hoursWorked = 125;
+hoursWorked = 148;
+
