@@ -1,5 +1,7 @@
-﻿const double interestRate = 0.07;
+﻿string firstName = "Bethany";
+string lastName = "Smith";
 
-interestRate = 0.08; 
+string emptyString = "";
 
-// CS0131: The left-hand side of an assignment must be a variable, property or indexer
+Console.WriteLine("Please enter your name");
+string name = Console.ReadLine();

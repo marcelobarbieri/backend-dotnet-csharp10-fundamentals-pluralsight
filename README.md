@@ -673,4 +673,27 @@ string s2 = string.Empty;
 
 <!-- #endregion -->
 
+<!-- #region Demo: Creating Strings -->
+
+<details>
+<summary>Demo: Creating Strings</summary>
+
+<br/>
+
+Program.cs
+
+```c#
+string firstName = "Bethany";
+string lastName = "Smith";
+
+string emptyString = "";
+
+Console.WriteLine("Please enter your name");
+string name = Console.ReadLine();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
