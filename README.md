@@ -859,4 +859,30 @@ Console.ReadLine();
 
 <!-- #endregion -->
 
+<!-- #region Using Date and Time in C# -->
+
+<details>
+<summary>Using Date and Time in C#</summary>
+
+<br/>
+
+Working with Dates
+
+- DateTime
+- TimeSpan
+
+Working with DateTime and DateOnly
+
+```c#
+DateTime employeesStartDate = new DateTime(2025,03,28);
+DateTime today = DateTime.Today;
+DateTime twoDaysLater = someDateTime.AddDays(2);
+DayOfWeek day = someDateTime.DayOfWeek;
+bool isDST = someDateTime.IsDaylightsSavingTime();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
