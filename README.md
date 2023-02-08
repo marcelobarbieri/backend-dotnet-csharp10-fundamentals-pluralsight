@@ -696,4 +696,60 @@ string name = Console.ReadLine();
 
 <!-- #endregion -->
 
+<!-- #region C# Operators -->
+
+<details>
+<summary>C# Operators</summary>
+
+<br/>
+
+Expressions in C#
+
+Arithmetic expressions
+
+```c#
+int a, b, c;
+a = 3;
+b = 10;
+c = a++;
+b = a + b * c;
+```
+
+Operators:
+
+- Arithmetic
+- Equality
+- Logical
+- Assignment
+
+Using Arithmetic Operators
+
+| Operator | Example |
+| :------: | :-----: |
+|    +     |   a+b   |
+|    -     |   a-3   |
+|    \*    |  a*b*c  |
+|    /     |  a/10   |
+|    ++    |   a++   |
+|    --    |   b--   |
+
+Compound Assignment Operators
+
+```c#
+int month = 3;
+month = month + 1;
+month += 1; // compount assignment operator (pt-br, "operador de atribuição composto")
+```
+
+Operators Depend on the Type
+
+```c#
+string result1 = "a" + "b"; // concatenate
+string result2 = "a" * "b"; // wrong
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
