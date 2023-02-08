@@ -1,21 +1,10 @@
-﻿int bonus = 1000;
+﻿int intMaxValue = int.MaxValue; // 2147483647
+int intMinValue = int.MinValue; //-2147483648
 
-double ratePerHour = 12.34;
-int numberOfHoursWorked = 165;
+char userSelection = 'a';
+char upperVersion = char.ToUpper(userSelection); // 65 'A'
 
-double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
-Console.WriteLine(currentMonthWage); // 3036,1
-
-ratePerHour += 3; // ratePerHour = ratePerHour + 3;
-Console.WriteLine(ratePerHour); // 15,34
-
-if (currentMonthWage > 2000) // 3036,1
-    Console.WriteLine("Top paid employee!");
-
-int numberOfEmployees = 15;
-numberOfEmployees--; // 14
-
-bool a; // false
-int b; // 0
+bool isDigit = char.IsDigit(userSelection); // false
+bool isLetter = char.IsLetter(userSelection); // true
 
 Console.ReadLine();

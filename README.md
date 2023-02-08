@@ -829,4 +829,34 @@ bool isPunctuation = char.IsPunctuation(myChar);
 
 <!-- #endregion -->
 
+<!-- #region Demo: Working with Members On Primitive Types -->
+
+<details>
+<summary>Demo: Working with Members On Primitive Types</summary>
+
+<br/>
+
+Working with members of `int` and `char`
+
+https://learn.microsoft.com/pt-br/dotnet/api/system.int32?view=net-6.0
+
+Program.cs
+
+```c#
+int intMaxValue = int.MaxValue; // 2147483647
+int intMinValue = int.MinValue; //-2147483648
+
+char userSelection = 'a';
+char upperVersion = char.ToUpper(userSelection); // 65 'A'
+
+bool isDigit = char.IsDigit(userSelection); // false
+bool isLetter = char.IsLetter(userSelection); // true
+
+Console.ReadLine();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
