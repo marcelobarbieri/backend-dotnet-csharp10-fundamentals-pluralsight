@@ -518,4 +518,75 @@ string Name_2 = Console.ReadLine();
 
 <!-- #endregion -->
 
+<!-- #region Working with Built-in Types -->
+
+<details>
+<summary>Working with Built-in Types</summary>
+
+<br/>
+
+C# is a strongly type language:
+
+- Every variable has a type
+- Used to store information
+- Expressions will return a value of a specified type
+
+Using Data Types in C#:
+
+- Size and location in memory
+- Data range
+- Supported operations
+
+| Predefined types |
+| ---------------- |
+| bool             |
+| int              |
+| float            |
+| double           |
+| decimal          |
+| char             |
+
+| More Predefined Data Types |
+| -------------------------- |
+| byte (sbyte)               |
+| short (ushort)             |
+| object                     |
+| string                     |
+
+<br/>
+
+Creating an Integer Value
+
+```c#
+int a = 2;
+int b = a + 3;
+```
+
+| Expression |
+| :--------: |
+|   a + 3    |
+
+Expression is a piece of code that will evaluate to a value.
+
+<br/>
+
+Creating a Boolean Value
+
+```c#
+bool c = true;
+```
+
+<br/>
+
+C# Types Lead to Type Safety
+
+```c#
+int c = 3;
+c = true; // wrong
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
