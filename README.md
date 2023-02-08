@@ -649,4 +649,28 @@ interestRate = 0.08;
 
 <!-- #endregion -->
 
+<!-- #region Getting to Know Strings -->
+
+<details>
+<summary>Getting to Know Strings</summary>
+
+<br/>
+
+Understanding Strings
+
+- Contains text
+- Stored as list os char objects
+- string type
+
+Creating Basic Strings
+
+```c#
+string s1 = "Hello world";
+string s2 = string.Empty;
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
