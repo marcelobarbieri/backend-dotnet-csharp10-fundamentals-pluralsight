@@ -1,5 +1,23 @@
-﻿var monthlyWage = 1234; // integer
-var isActive = true; // boolean
-var rating = 99.25; // double
-var numberOfEmployees = 300; // integer
-var hireDate = new DateTime(2022,3,28,14,30,0); // DateTime
+﻿int age = 23;
+
+bool a = age == 23;
+Console.WriteLine("Age is 23: " + a);
+
+bool b = age >= 23;
+Console.WriteLine("Age is greater than 23: " + b);
+
+bool c = (age >= 18) && (age <= 65);
+Console.WriteLine("Age is between 18 and 65: " + c);
+
+int age1 = 16;
+int age2 = 64;
+bool d = (age1 >= 18) && (age2 <= 65);
+Console.WriteLine("Age1 is greater than 18 AND age2 is less than 65: " + d);
+bool e = (age1 >= 18) || (age2 <= 65);
+Console.WriteLine("Age1 is greater than 18 OR age2 is less than 65: " + e);
+
+//Age is 23: True
+//Age is greater than 23: True
+//Age is between 18 and 65: True
+//Age1 is greater than 18 AND age2 is less than 65: False
+//Age1 is greater than 18 OR age2 is less than 65: True
