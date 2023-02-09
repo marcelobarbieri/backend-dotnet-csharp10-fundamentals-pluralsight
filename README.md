@@ -976,4 +976,31 @@ int a = (int) d;
 
 <!-- #endregion -->
 
+<!-- #region Demo: Converting Between Types -->
+
+<details>
+<summary>Demo: Converting Between Types</summary>
+
+<br/>
+
+Program.cs
+
+```c#
+int numberOfHoursWorked = 165;
+
+long veryLongMonth = numberOfHoursWorked; // works fine
+
+double d = 123456789.0;
+
+int x = (int)d;
+
+int intVeryLongMonth = (int)veryLongMonth;
+
+Console.ReadLine();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
