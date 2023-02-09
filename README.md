@@ -1081,3 +1081,27 @@ var hireDate = new DateTime(2022,3,28,14,30,0); // DateTime
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Adding Decision and Iteration Statements in C# -->
+
+## Adding Decision and Iteration Statements in C#
+
+<!-- #region Module Introduction -->
+
+<details>
+<summary>Module Introduction</summary>
+
+<br/>
+
+Agenda:
+
+- Working with Boolean values
+- Making decisions with the `if` statement
+- Using the `switch` statement
+- Adding iterations
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
