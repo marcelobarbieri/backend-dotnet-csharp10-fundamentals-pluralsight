@@ -1065,4 +1065,19 @@ var hireDate = new DateTime(2022,3,28,14,30,0); // DateTime
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- C# is a strongly typed language
+- Contains built-in data types
+- Conversion between types is supported
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
