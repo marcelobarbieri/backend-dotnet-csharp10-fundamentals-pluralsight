@@ -1104,4 +1104,60 @@ Agenda:
 
 <!-- #endregion -->
 
+<!-- #region Working with Boolean Values -->
+
+<details>
+<summary>Working with Boolean Values</summary>
+
+<br/>
+
+Boolean Values
+
+- True or false
+- bool type (Boolean backing type)
+- Boolean operators
+
+Using a Boolean Value
+
+```c#
+bool c = true;
+Console.WriteLine(c); // Writes True to the console
+```
+
+Using Relational Operators
+
+| Operator | Example |
+| :------: | :-----: |
+|    ==    | a == b  |
+|    !=    | a != b  |
+|  > or <  | a > 10  |
+| >= or <= | a <= 5  |
+
+Using Logical Operators
+
+```c#
+age == 45; // True if value of age is effectively equal to 45, otherwise false
+age != 0; // True if age is not equal to 0
+```
+
+Using Boolean Logical Operators: &&
+
+```c#
+bool validAge;
+validAge = (age >= 18) && (age <= 65>);
+// && - True if either of the expressions is true, otherwise false
+```
+
+Using Boolean Logical Operators: ||
+
+```c#
+bool validAge;
+validAge = (age >= 18 ||) (age <= 65);
+// || - True if any of the expressions is true, false only if both are false
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
