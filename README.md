@@ -938,4 +938,42 @@ quarta-feira, 8 de fevereiro de 2023
 
 <!-- #endregion -->
 
+<!-- #region Converting Between Types -->
+
+<details>
+<summary>Converting Between Types</summary>
+
+<br/>
+
+This Doesn´t Work...
+
+```c#
+int a = 3;
+a = "Hello world";
+```
+
+Changing between Types
+
+- Implicit conversion
+- Casting Explicit conversion
+- Helpers
+
+Using an Implicit Cast
+
+```c#
+int a = 123456789;
+long l = a;
+```
+
+Performing an Explicit Cast
+
+```c#
+double d = 123456789.0;
+int a = (int) d;
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
