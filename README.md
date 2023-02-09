@@ -1003,4 +1003,45 @@ Console.ReadLine();
 
 <!-- #endregion -->
 
+<!-- #region Implict Typing -->
+
+<details>
+<summary>Implicit Typing</summary>
+
+<br/>
+
+So Far, We´ve Used Explicit Typing
+
+Explicit typing
+
+```c#
+int a = 123;
+bool b = true;
+double d = 11.0;
+```
+
+Implicit typing
+
+```c#
+var a = 123;  // a will be an integer
+var b = true; // b will be a boolean
+var d = 11.0; // d will be a double
+```
+
+Understanding Implicit Typing
+
+- Type is inferred
+- Not always as readable
+- Sometimes required (using LINQ)
+
+This Won´t Work...
+
+```c#
+var employeeAge;
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
