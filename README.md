@@ -1393,4 +1393,79 @@ else if (today.Date.Day >= 25 && ! endOfMonthPaymentStarted)
 
 <!-- #endregion -->
 
+<!-- #region Using switch Statement -->
+
+<details>
+<summary>Using switch Statement</summary>
+
+<br/>
+
+Too Many Options...
+
+```c#
+if (condition 1)
+  ...
+else if (condition 2)
+  ...
+else if (condition 3)
+  ...
+else if (condition 4)
+  ...
+else if (condition 5)
+  ...
+else if (condition 6)
+  ...
+...
+else
+  ...
+```
+
+Structure of a swith Statement
+
+```c#
+switch(expression)
+{
+  case constant expression1:
+    // Other statements
+    break;
+  case relational expression2:
+    // Other statements
+    break;
+
+  ...
+
+  default:
+    // Other statements
+    break;
+}
+```
+
+Using a swith Statement
+
+```c#
+swith (age)
+{
+  case < 18:
+    Console.WriteLine("Too young to apply");
+    break;
+  case > 65:
+    Console.WriteLine("Sorry, the selected age is too old");
+    break;
+  case 42:
+    Console.WriteLine("Wow, exactly what we are looking for");
+    break;
+  default:
+    Console.WriteLine("Great, you can continue");
+    break;
+}
+```
+
+- Works for most data types but not for `float` and `double`
+- Case labels use a pattern: constant or relational
+- Each case must be unique
+- First "true" will get executed (top to bottom)
+- Default can be placed wherever we want, always evaluated last
+
+<!-- #endregion -->
+
 <!-- #endregion -->
