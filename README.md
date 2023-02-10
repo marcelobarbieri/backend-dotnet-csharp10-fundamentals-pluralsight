@@ -1205,4 +1205,122 @@ Age1 is greater than 18 OR age2 is less than 65: True
 
 <!-- #endregion -->
 
+<!-- #region Making Decisions with the if Statement -->
+
+<details>
+<summary>Making Decisions with the if Statement</summary>
+
+<br/>
+
+Flow of Execution
+
+- Won´t be a straight path
+- Depends on values
+- Different logic needs to be executed
+
+A New Requirement
+
+- If the person applying for the job is under 18, we can´t hire them
+- If the person applying is older than 65 we can´t hire them
+
+Structure of an if Statement
+
+```c#
+if (some Boolean expression)
+{
+  // Other statements
+}
+else
+{
+  // Other statements
+  // The else block is optional
+}
+```
+
+Using an if Statement
+
+```c#
+if (age < 18)
+{
+  Console.WriteLine("Too young to apply");
+}
+```
+
+```c#
+if (age < 18)
+{
+  Console.WriteLine("Too young to apply");
+}
+else
+{
+  Console.WriteLine("Great, you can now start with your application!");
+}
+```
+
+```c#
+if (age < 18)
+  Console.WriteLine("Too young to apply");
+else
+  Console.WriteLine("Great, you can now start with your application!");
+```
+
+This Won´t Work
+
+```c#
+if (age < 18)
+  Console.WriteLine("Too young to apply");
+  Console.WriteLine("Please try again later!");
+  // We need curly braces here!
+else
+  Console.WriteLine("Great, you can continue!");
+```
+
+```c#
+if (age = 100)
+{
+  // Send mail
+}
+```
+
+Adding Multiple Conditions
+
+```c#
+if (some Boolean expression)
+{
+  // Other statements
+}
+else if (other Boolean expression)
+{
+  // Other statements
+}
+
+...
+
+else
+{
+  // Other statements
+}
+```
+
+Using an else if Block
+
+```c#
+if (age < 18)
+{
+  Console.WriteLine("You young to apply");
+}
+else if (age > 65)
+{
+  Console.WriteLine("Sorry, the selected age is too old");
+}
+else
+{
+  Console.WriteLine("Great, you can continue!");
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
