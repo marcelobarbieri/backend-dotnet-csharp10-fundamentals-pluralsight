@@ -1470,10 +1470,10 @@ swith (age)
 
 <!-- #endregion -->
 
-<!-- #region Using switch Statement -->
+<!-- #region Demo Using switch Statement -->
 
 <details>
-<summary>Using switch Statement</summary>
+<summary>Demo Using switch Statement</summary>
 
 Program.cs
 
@@ -1549,6 +1549,68 @@ switch(selectedAction)
 ```
 
 <br/>
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Adding Iterations -->
+
+<details>
+<summary>Adding Iterations</summary>
+
+<br/>
+
+The Need for Iterations
+
+- Continue executing a task (looping)
+- Ofter used in combination with counter
+- Ask input until stop is reached
+- Keep reading files from disk
+
+Loop Options in C#
+
+- while
+- do-while
+- for
+
+Creating a while loop
+
+```c#
+while(Boolean expression)
+{
+  // statements
+}
+```
+
+- Condition is tested before the loop runs
+- Statements will get executed as long as expression is true
+- Braces are required if more than one statement must be executed
+- We can create infinite loops!
+
+```c#
+int i = 0;
+
+while (i < 10>)
+{
+  Console.WriteLine(i);
+  i++;
+}
+```
+
+```ps
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
 
 </details>
 
