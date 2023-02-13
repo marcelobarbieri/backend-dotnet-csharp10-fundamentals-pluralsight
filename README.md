@@ -1798,4 +1798,83 @@ i: 2   j: 2
 
 <!-- #endregion -->
 
+<!-- #region Using the do while and the for loop -->
+
+<details>
+<summary>Using the do while and the for loop</summary>
+
+<br/>
+
+Creating a do-while loop
+
+```c#
+do{
+  //statements
+}
+while(Boolean expression);
+```
+
+```c#
+int i = 0;
+do
+{
+  Console.WriteLine(i);
+  i++;
+} while (i < 10);
+```
+
+```ps
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+```c#
+int i = 10;
+do
+{
+  Console.WriteLine(i);
+  i++;
+} while (i < 10);
+```
+
+```ps
+Output:
+10
+```
+
+<br/>
+
+Creating a for Loop
+
+```c#
+for (initialization; Boolean; iterator)
+{
+  // statements
+}
+```
+
+```c#
+int sum = 0;
+
+for (int i = 0; i < 10; i ++)
+{
+sum = sum + i;
+}
+
+Console.WriteLine(sum);
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
