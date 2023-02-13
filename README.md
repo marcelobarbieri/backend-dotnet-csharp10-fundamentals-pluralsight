@@ -1616,4 +1616,186 @@ Output:
 
 <!-- #endregion -->
 
+<!-- #region Demo Creating a while Loop -->
+
+<details>
+<summary>Demo Creating a while Loop</summary>
+
+<br/>
+
+Creating a while loop
+
+Program.cs
+
+```c#
+using System.Transactions;
+
+Console.WriteLine("Enter a value: ");
+int max = int.Parse(Console.ReadLine());
+
+int i = 0;
+
+while (i < max)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+Console.WriteLine("Loop finished!");
+```
+
+Console
+
+```ps
+Enter a value:
+5
+0
+1
+2
+3
+4
+Loop finished!
+```
+
+Program.cs
+
+```c#
+int i = 10;
+
+while(i>0)
+{
+    Console.WriteLine(i);
+    i--;
+}
+
+Console.WriteLine("Loop finished!")
+```
+
+Console
+
+```ps
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Loop finished!
+```
+
+Program.cs
+
+```c#
+Console.WriteLine("Choose the action you want to do: ");
+Console.WriteLine("1. Add employee");
+Console.WriteLine("2. Update employee");
+Console.WriteLine("3. Delete employee");
+Console.WriteLine("99. Exit application");
+string selectedAction = Console.ReadLine();
+
+while (selectedAction != "99")
+{
+    switch (selectedAction)
+    {
+        case "1":
+            Console.WriteLine("Adding new employee...");
+            break;
+        case "2":
+            Console.WriteLine("Updating employee...");
+            break;
+        case "3":
+            Console.WriteLine("Deleting employee...");
+            break;
+        default:
+            Console.WriteLine("Invalid input");
+            break;
+    }
+    Console.WriteLine("Choose the action you want to do: ");
+    Console.WriteLine("1. Add employee");
+    Console.WriteLine("2. Update employee");
+    Console.WriteLine("3. Delete employee");
+    Console.WriteLine("99. Exit application");
+    selectedAction = Console.ReadLine();
+}
+
+Console.WriteLine("Closing application");
+```
+
+Console
+
+```ps
+Choose the action you want to do:
+1. Add employee
+2. Update employee
+3. Delete employee
+99. Exit application
+1
+Adding new employee...
+Choose the action you want to do:
+1. Add employee
+2. Update employee
+3. Delete employee
+99. Exit application
+2
+Updating employee...
+Choose the action you want to do:
+1. Add employee
+2. Update employee
+3. Delete employee
+99. Exit application
+3
+Deleting employee...
+Choose the action you want to do:
+1. Add employee
+2. Update employee
+3. Delete employee
+99. Exit application
+99
+Closing application
+```
+
+<br/>
+
+Creating a nested loop
+
+Program.cs
+
+```c#
+int i = 0;
+int j = 0;
+
+while (i < 3)
+{
+    while(j < 3)
+    {
+        Console.WriteLine("i: " + i + "   j: " + j);
+        j++;
+    }
+    j = 0;
+    i++;
+}
+```
+
+Console
+
+```ps
+i: 0   j: 0
+i: 0   j: 1
+i: 0   j: 2
+i: 1   j: 0
+i: 1   j: 1
+i: 1   j: 2
+i: 2   j: 0
+i: 2   j: 1
+i: 2   j: 2
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
