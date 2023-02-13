@@ -1,13 +1,12 @@
-﻿int i = 0;
-int j = 0;
+﻿Console.WriteLine("Enter a value: ");
+int max = int.Parse(Console.ReadLine());
 
-while (i < 3)
+for (int i = 0; i < max; i++)
 {
-    while(j < 3)
+    if (i == 5)
     {
-        Console.WriteLine("i: " + i + "   j: " + j);
-        j++;
+        Console.WriteLine("Bingo! " + i + "was found!");
+        break;
     }
-    j = 0;
-    i++;
+    Console.WriteLine(i);
 }

@@ -1877,4 +1877,123 @@ Console.WriteLine(sum);
 
 <!-- #endregion -->
 
+<!-- #region Demo More Loops -->
+
+<details>
+<summary>Demo More Loops</summary>
+
+<br/>
+
+- Creating more loops
+- Adding break and continue
+- Debugging loops
+
+Refactoring (`do while` instead of `while`)
+
+```c#
+string selectedAction;
+do
+{
+    Console.WriteLine("Choose the action you want to do: ");
+    Console.WriteLine("1. Add employee");
+    Console.WriteLine("2. Update employee");
+    Console.WriteLine("3. Delete employee");
+    Console.WriteLine("99. Exit application");
+    selectedAction = Console.ReadLine();
+
+    switch (selectedAction)
+    {
+        case "1":
+            Console.WriteLine("Adding new employee...");
+            break;
+        case "2":
+            Console.WriteLine("Updating employee...");
+            break;
+        case "3":
+            Console.WriteLine("Deleting employee...");
+            break;
+        default:
+            Console.WriteLine("Invalid input");
+            break;
+    }
+
+} while (selectedAction != "99");
+
+Console.WriteLine("Closing application");
+```
+
+for
+
+```c#
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+```
+
+Continue
+
+```c#
+Console.WriteLine("Enter a value: ");
+int max = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < max; i++)
+{
+    if (i == 5)
+    {
+        Console.WriteLine("Bingo! " + i + " was found!");
+        continue;
+    }
+    Console.WriteLine(i);
+}
+
+/*
+Enter a value:
+10
+0
+1
+2
+3
+4
+Bingo! 5 was found!
+6
+7
+8
+9
+*/
+
+```
+
+Break
+
+```c#
+Console.WriteLine("Enter a value: ");
+int max = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < max; i++)
+{
+    if (i == 5)
+    {
+        Console.WriteLine("Bingo! " + i + " was found!");
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+/*
+Enter a value:
+10
+0
+1
+2
+3
+4
+Bingo! 5 was found!
+*/
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
