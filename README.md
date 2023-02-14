@@ -2035,4 +2035,130 @@ Bingo! 5 was found!
 
 <!-- #endregion -->
 
+<!-- #region Understanding Methods -->
+
+<details>
+<summary>Understanding Methods</summary>
+
+<br/>
+
+Our current code...
+
+- Is one large block
+- Some code can be reused multiple times though
+- Using methods will help
+- Similar to functions or subroutines
+
+Methods in C#
+
+- Code block
+- Receives parameters and (optionally) returns value
+- Readable code and code reuse
+- Declared within a class or struct
+
+C# Methods Syntax
+
+```c#
+<access modifier> <return type> Method_Name (Parameters)
+{
+  // method statements
+}
+```
+
+Looking at a First Method
+
+```c#
+public int AddTwoNumbers()
+{
+
+}
+```
+
+Adding Method Parameters
+
+```c#
+public int AddTwoNumbers(int a, int b)
+```
+
+Returning a Value
+
+- Return type must be specified
+
+```c#
+public int AddTwoNumbers(int a, int b)
+{
+  return a + b;
+}
+```
+
+- Value must be returned for all possible execution paths
+
+```c#
+public int AddTwoNumbers(int a, int b)
+{
+  if (a > b)
+  {
+    return a + b;
+  }
+  // no value returned if we get here, compile time error
+}
+```
+
+</details>
+
+- A Method without Return Value
+
+```c#
+public void DisplaySum(int a, int b)
+{
+  int sum = a + b;
+  Console.WriteLine("The sum is " + sum);
+}
+```
+
+Invoking a Method
+
+- We can pass arguments: values for the parameter(s)
+
+```c#
+...
+
+DisplaySum(3,52);
+
+...
+```
+
+Flow of Execution
+
+```c#
+Console.WriteLine("Before DisplaySum");
+DisplaySum(3,5);
+Console.WriteLine("After DisplaySum");
+
+public void DisplaySum(int a, int b)
+{
+  int sum = a + b;
+  Console.WriteLine("The sum is " + sum);
+}
+```
+
+Capturing a Return Value
+
+- Only possible if method isn´t returning void
+
+```c#
+DisplaySum(3,52);
+int result = AddTwoNumbers(55,44);
+```
+
+```c#
+int p1 = 3;
+int p2 = 52;
+
+DisplaySum(p1, p2);
+int result = AddTwoNumbers(55,44);
+```
+
+<!-- #endregion -->
+
 <!-- #endregion -->
