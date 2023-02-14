@@ -2306,4 +2306,47 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Finding the Correct Method -->
+
+<details>
+<summary>Finding the Correct Method</summary>
+
+<br/>
+
+Calling the Correct Method
+
+- Method name
+- Parameter types and arguments
+- Number of parameters
+
+`The combination above must be unique`
+
+Method Overloading
+
+- Matching the Parameters
+
+Program.cs
+
+```c#
+DisplaySym(3, 52);
+```
+
+Utilities.cs
+
+```c#
+public static void DisplaySum (int a, int b)
+{
+  ...
+}
+
+public static void DisplaySum(int a, int b, int c)
+{
+  ...
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
