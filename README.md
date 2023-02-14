@@ -2247,4 +2247,63 @@ static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
 
 <!-- #endregion -->
 
+<!-- #region Demo Adding a Helper File -->
+
+<details>
+<summary>Demo Adding a Helper File</summary>
+
+<br/>
+
+- Adding a helper file
+- Moving the method
+- Invoking the method again
+
+Program.cs
+
+```c#
+using BethanyPieShopHRM;
+
+int amount = 1234;
+int months = 12;
+
+int yearlyWage = Utilities.CalculateYearlyWage(amount, months);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+Console.ReadLine();
+
+/*
+ * Output:
+ * Yearly wage: 16042
+ */
+```
+
+Utilities.cs
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BethanyPieShopHRM
+{
+    internal class Utilities
+    {
+        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+        {
+            if (numberOfMonthsWorked == 12) // let´s add a bonus month
+                return monthlyWage * (numberOfMonthsWorked + 1);
+
+            return monthlyWage * numberOfMonthsWorked;
+        }
+    }
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
