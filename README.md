@@ -2104,8 +2104,6 @@ public int AddTwoNumbers(int a, int b)
 }
 ```
 
-</details>
-
 - A Method without Return Value
 
 ```c#
@@ -2158,6 +2156,94 @@ int p2 = 52;
 DisplaySum(p1, p2);
 int result = AddTwoNumbers(55,44);
 ```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo Creating and Using Methods -->
+
+<details>
+<summary>Demo Creating and Using Methods</summary>
+
+<br/>
+
+- Creating a method
+- Adding parameters
+- Return a value
+- Invoking the method
+
+Example 1
+
+```c#
+int amount = 1234;
+int months = 12;
+
+CalculateYearlyWage(amount, months);
+
+Console.ReadLine();
+
+static void CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+{
+    Console.WriteLine($"Yearly wage: {monthlyWage * numberOfMonthsWorked}");
+}
+
+/*
+ * Output:
+ * Yearly wage: 14808
+ */
+```
+
+Example 2
+
+```c#
+int amount = 1234;
+int months = 12;
+
+int yearlyWage = CalculateYearlyWage(amount, months);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+Console.ReadLine();
+
+static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+{
+    return monthlyWage * numberOfMonthsWorked;
+}
+
+/*
+ * Output:
+ * Yearly wage: 14808
+ */
+```
+
+Example 3
+
+```c#
+int amount = 1234;
+int months = 12;
+
+int yearlyWage = CalculateYearlyWage(amount, months);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+Console.ReadLine();
+
+static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+{
+    if (numberOfMonthsWorked == 12) // let´s add a bonus month
+        return monthlyWage * (numberOfMonthsWorked + 1);
+
+    return monthlyWage * numberOfMonthsWorked;
+}
+
+/*
+ * Output:
+ * Yearly wage: 16042
+ */
+```
+
+</details>
 
 <!-- #endregion -->
 

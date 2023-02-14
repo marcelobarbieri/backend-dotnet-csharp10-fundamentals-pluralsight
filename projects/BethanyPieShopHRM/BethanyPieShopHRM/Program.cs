@@ -1,12 +1,21 @@
-﻿Console.WriteLine("Enter a value: ");
-int max = int.Parse(Console.ReadLine());
+﻿int amount = 1234;
+int months = 12;
 
-for (int i = 0; i < max; i++)
+int yearlyWage = CalculateYearlyWage(amount, months);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+Console.ReadLine();
+
+static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
 {
-    if (i == 5)
-    {
-        Console.WriteLine("Bingo! " + i + "was found!");
-        break;
-    }
-    Console.WriteLine(i);
+    if (numberOfMonthsWorked == 12) // let´s add a bonus month
+        return monthlyWage * (numberOfMonthsWorked + 1);
+
+    return monthlyWage * numberOfMonthsWorked;
 }
+
+/*
+ * Output:
+ * Yearly wage: 16042
+ */
