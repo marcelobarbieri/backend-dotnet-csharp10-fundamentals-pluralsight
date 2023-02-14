@@ -2012,3 +2012,27 @@ Bingo! 5 was found!
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Using Methods in C# -->
+
+## Using Methods in C#
+
+<!-- #region Module Introduction -->
+
+<details>
+<summary>Module Introduction</summary>
+
+<br/>
+
+- Understanding methods
+- Adding a helper file
+- Finding the correct method
+- Understanding variable scope
+- More options with methods
+- Introducing the Main method
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
