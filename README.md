@@ -1996,4 +1996,19 @@ Bingo! 5 was found!
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Our C# code will need to follow different paths
+- if and switch statements allow to evaluate values
+- while, do-while and for create iterations
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
