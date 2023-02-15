@@ -8,25 +8,24 @@ namespace BethanyPieShopHRM
 {
     internal class Utilities
     {
-        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+        public static void UsingNamedArguments()
         {
-            int local = 100;
+            int amount = 1234;
+            int months = 12;
+            int bonus = 500;
 
-            if (numberOfMonthsWorked == 12) // let´s add a bonus month
-                return monthlyWage * (numberOfMonthsWorked + 1);
+            int yearlyWageForEmployee = CalculateYearlyWageWithNamed(
+                bonus: bonus,
+                monthlyWage: amount,
+                numberOfMonthsWorked: months);
 
-            return monthlyWage * numberOfMonthsWorked;
+            Console.WriteLine($"Yearly wage for employee (Bethany): {yearlyWageForEmployee}");
         }
 
-        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked, int bonus)
-        {
-            int local = 150;
-
-            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
-            return monthlyWage * numberOfMonthsWorked + bonus;
-        }
-
-        public static double CalculateYearlyWage(double monthlyWage, double numberOfMonthsWorked, double bonus)
+        public static int CalculateYearlyWageWithNamed (
+            int monthlyWage, 
+            int numberOfMonthsWorked, 
+            int bonus)
         {
             Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
             return monthlyWage * numberOfMonthsWorked + bonus;
