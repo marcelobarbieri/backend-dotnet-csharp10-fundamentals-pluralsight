@@ -1,5 +1,5 @@
 ﻿using BethanyPieShopHRM;
 
-Utilities.UsingNamedArguments();
+Utilities.UsingExpressionBodiedSyntax();
 
 Console.ReadLine();

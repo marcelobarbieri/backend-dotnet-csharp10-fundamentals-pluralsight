@@ -2689,4 +2689,62 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Demo Using Expression-bodied Members -->
+
+<details>
+<summary>Demo Using Expression-bodied Members</summary>
+
+<br/>
+
+Using expression-bodied syntax
+
+> fat arrow: =>
+
+Program.cs
+
+```c#
+using BethanyPieShopHRM;
+
+Utilities.UsingExpressionBodiedSyntax();
+
+Console.ReadLine();
+```
+
+Utilities.cs
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BethanyPieShopHRM
+{
+    internal class Utilities
+    {
+        public static void UsingExpressionBodiedSyntax()
+        {
+            int amount = 1234;
+            int months = 12;
+            int bonus = 500;
+
+            int yearlyWageForEmployee = CalculateYearlyWageWithExpressionBodied(amount, months, bonus);
+
+            Console.WriteLine($"Yearly wage for employee (Bethany): {yearlyWageForEmployee}");
+        }
+
+        public static int CalculateYearlyWageWithExpressionBodied(
+            int monthlyWage,
+            int numberOfMonthsWorked,
+            int bonus) => monthlyWage * numberOfMonthsWorked + bonus;
+    }
+}
+
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
