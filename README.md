@@ -2816,4 +2816,40 @@ The Main Method
 
 <!-- #endregion -->
 
+<!-- #region Demo Exploring the Main Method -->
+
+<details>
+<summary>Demo Exploring the Main Method</summary>
+
+<br/>
+
+Exploring the Main method
+
+Program.cs (.NET 5)
+
+```c#
+using System;
+
+namespace OlderApp
+{
+  internal class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello,World!");
+    }
+  }
+}
+```
+
+Program.cs (.NET 6)
+
+```c#
+Console.WriteLine("Hello,World!");
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
