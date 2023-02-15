@@ -16,7 +16,7 @@ https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals/table-of-con
 
 ## Getting Started with C# 10 and .NET 6
 
-More <!-- #region Module Introduction -->
+<!-- #region Module Introduction -->
 
 <details>
 <summary>Module Introduction</summary>
@@ -2862,6 +2862,27 @@ Console.WriteLine("Hello,World!");
 - Methods are used to bring in reuse of code
 - Parameters are declared to accept incoming values
 - Main method is implicit now
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
+
+<!-- #region Working with Strings -->
+
+## Working with Strings
+
+<!-- #region Introduction -->
+
+<details>
+<summary>Introduction</summary>
+
+<br/>
+
+- Working with strings
+- Comparing strings
+- Parsing from string to other types
 
 </details>
 
