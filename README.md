@@ -2460,4 +2460,56 @@ public static double AnotherMethod()
 
 <!-- #endregion -->
 
+<!-- #region Demo Using Variable Scope -->
+
+<details>
+<summary>Demo Using Variable Scope</summary>
+
+<br/>
+
+Utilities.cs
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BethanyPieShopHRM
+{
+    internal class Utilities
+    {
+        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+        {
+            int local = 100; // variable scope
+
+            if (numberOfMonthsWorked == 12) // let´s add a bonus month
+                return monthlyWage * (numberOfMonthsWorked + 1);
+
+            return monthlyWage * numberOfMonthsWorked;
+        }
+
+        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked, int bonus)
+        {
+            int local = 150; // variable scope
+
+            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
+            return monthlyWage * numberOfMonthsWorked + bonus;
+        }
+
+        public static double CalculateYearlyWage(double monthlyWage, double numberOfMonthsWorked, double bonus)
+        {
+            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
+            return monthlyWage * numberOfMonthsWorked + bonus;
+        }
+    }
+}
+
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
