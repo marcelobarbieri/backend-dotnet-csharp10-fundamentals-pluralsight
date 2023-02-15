@@ -2852,4 +2852,19 @@ Console.WriteLine("Hello,World!");
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Methods are used to bring in reuse of code
+- Parameters are declared to accept incoming values
+- Main method is implicit now
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
