@@ -2,14 +2,16 @@
 
 int amount = 1234;
 int months = 12;
+int bonus = 1000;
 
-int yearlyWage = Utilities.CalculateYearlyWage(amount, months);
+int yearlyWage = Utilities.CalculateYearlyWage(amount, months, bonus);
 
 Console.WriteLine($"Yearly wage: {yearlyWage}");
 
-Console.ReadLine();
+double amountDouble = 1500.0;
+double monthsDouble = 12;
+double bonusDouble = 1000;
 
-/*
- * Output:
- * Yearly wage: 16042
- */
+double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
+
+Console.ReadLine();

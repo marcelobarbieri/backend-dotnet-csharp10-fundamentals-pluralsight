@@ -2349,4 +2349,75 @@ public static void DisplaySum(int a, int b, int c)
 
 <!-- #endregion -->
 
+<!-- #region Demo Using Method Overloading -->
+
+<details>
+<summary>Demo Using Method Overloading</summary>
+
+<br/>
+
+Program.cs
+
+```c#
+using BethanyPieShopHRM;
+
+int amount = 1234;
+int months = 12;
+int bonus = 1000;
+
+int yearlyWage = Utilities.CalculateYearlyWage(amount, months, bonus);
+
+Console.WriteLine($"Yearly wage: {yearlyWage}");
+
+double amountDouble = 1500.0;
+double monthsDouble = 12;
+double bonusDouble = 1000;
+
+double yearlyWageWithBonusDouble = Utilities.CalculateYearlyWage(amountDouble, monthsDouble, bonusDouble);
+
+Console.ReadLine();
+
+```
+
+Utilities.cs
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BethanyPieShopHRM
+{
+    internal class Utilities
+    {
+        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked)
+        {
+            if (numberOfMonthsWorked == 12) // let´s add a bonus month
+                return monthlyWage * (numberOfMonthsWorked + 1);
+
+            return monthlyWage * numberOfMonthsWorked;
+        }
+
+        public static int CalculateYearlyWage(int monthlyWage, int numberOfMonthsWorked, int bonus)
+        {
+            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
+            return monthlyWage * numberOfMonthsWorked + bonus;
+        }
+
+        public static double CalculateYearlyWage(double monthlyWage, double numberOfMonthsWorked, double bonus)
+        {
+            Console.WriteLine($"The yearly wage is: {monthlyWage * numberOfMonthsWorked + bonus}");
+            return monthlyWage * numberOfMonthsWorked + bonus;
+        }
+    }
+}
+
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
