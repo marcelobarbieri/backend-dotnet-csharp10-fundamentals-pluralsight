@@ -2420,4 +2420,44 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Understanding Variable Scope -->
+
+<details>
+<summary>Understanding Variable Scope</summary>
+
+<br/>
+
+```c#
+public static double SomeMethod()
+{
+  double value = 0.04;
+
+  ...
+
+  return value;
+}
+```
+
+```c#
+public static double SomeMethod()
+{
+  double value = 0.04;
+
+  ...
+
+  return value;
+}
+
+public static double AnotherMethod()
+{
+  ...
+
+  return value; // wrong
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
