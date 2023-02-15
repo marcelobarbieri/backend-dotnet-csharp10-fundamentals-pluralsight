@@ -16,7 +16,7 @@ https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals/table-of-con
 
 ## Getting Started with C# 10 and .NET 6
 
-<!-- #region Module Introduction -->
+More <!-- #region Module Introduction -->
 
 <details>
 <summary>Module Introduction</summary>
@@ -2506,6 +2506,71 @@ namespace BethanyPieShopHRM
     }
 }
 
+```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region More Options with Methods -->
+
+<details>
+<summary>More Options with Methods</summary>
+
+<br/>
+
+Doing More with Methods
+
+- Optional Parameters
+- Named arguments
+- Expression-bodied syntax
+
+Optional Parameters
+
+- Specify default value for one or more parameters
+- Caller can omit the optional ones
+
+Working with Optional Parameters
+
+- Method with optional parameters
+
+```c#
+public int AddNumbers
+  (int a, int b, int c = 100)
+{
+  int sum = a + b + c;
+  return sum;
+}
+```
+
+- Calling the method
+
+```c#
+AddNumbers(10,20); // no third parameter
+AddNumbers(10,20,30);
+```
+
+Named arguments
+
+- Not required to follow order of parameters
+- One or more parameters can have a name defined when invoking the method
+
+Working with Named Arguments
+
+- Method with parameters
+
+```c#
+public static int AddNumbers
+  (int a, int b)
+  {
+    ...
+  }
+```
+
+- Using named arguments
+
+```c#
+AddNumbers(b: 10, a: 20);
 ```
 
 </details>
