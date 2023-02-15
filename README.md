@@ -2747,4 +2747,73 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Introducing the Main Method -->
+
+<details>
+<summary>Introducing the Main Method</summary>
+
+<br/>
+
+Comparing Out 2 Files
+
+- Understanding Top-level statements
+
+Program.cs (current)
+
+```c#
+Console.WriteLine("Hello, World!");
+```
+
+Utilities.cs
+
+```c#
+using System;
+
+namespace ConsoleApp1
+{
+  internal class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello,World!");
+    }
+  }
+}
+```
+
+Different Ways to Start the Application
+
+Program.cs (current)
+
+```c#
+Console.WriteLine("Hello, World!");
+```
+
+Program.cs (pre-C# 10)
+
+```c#
+using System;
+
+namespace ConsoleApp1
+{
+  internal class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello,World!");
+    }
+  }
+}
+```
+
+The Main Method
+
+- Entry method wich gets called upon start of the app
+- Gets created implicitly now
+- Implicit since C# 10 & Visual Studio 2022
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
