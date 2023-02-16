@@ -3070,4 +3070,39 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Using Escape Characters -->
+
+<details>
+<summary>Using Escape Characters</summary>
+
+<br/>
+
+Adding Escape Characters
+
+- Always start with a \
+
+```c#
+Console.WriteLine("Here are the employee details:\nBethany\tSmith");
+```
+
+Representing a File Path
+
+```c#
+string escapedFilePath = "C:\\Documents\\readme.txt";
+```
+
+Using Verbatim Strings
+
+- Used when text contains \ as part of fhe content
+- Improves readability
+
+```c#
+string escapedFilePath = "C:\\Documents\\readme.txt";
+string verbatimFilePath = @"C:\Documents\readment.txt";
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
