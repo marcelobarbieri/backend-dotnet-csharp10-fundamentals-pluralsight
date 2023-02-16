@@ -2888,4 +2888,53 @@ Console.WriteLine("Hello,World!");
 
 <!-- #endregion -->
 
+<!-- #region Demo A Small Recap on Strings -->
+
+<details>
+<summary>Demo A Small Recap on Strings</summary>
+
+<br/>
+
+Program.cs
+
+```c#
+using BethanyPieShopHRM;
+
+Utilities.UsingSimpleStrings();
+
+Console.ReadLine();
+```
+
+Utilities.cs
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BethanyPieShopHRM
+{
+    internal class Utilities
+    {
+        public static void UsingSimpleStrings()
+        {
+            string firstName = "Bethany";
+            string lastName = "Smith";
+            string s;
+            s = firstName;
+            var userName = "BethanyS";
+            userName = userName.ToLower();
+
+            userName = ""; // identical to string.Empty
+        }
+    }
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
