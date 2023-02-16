@@ -2937,4 +2937,68 @@ namespace BethanyPieShopHRM
 
 <!-- #endregion -->
 
+<!-- #region Working with Strings -->
+
+<details>
+<summary>Working with Strings</summary>
+
+<br/>
+
+| Code                                    | Description                                     |
+| :-------------------------------------- | :---------------------------------------------- |
+| `int l = myString.Lenght;`              | Get the lenght of the string                    |
+| `string upper = myString.ToUpper();`    | Set the string to uppercase                     |
+| `string lower = myString.ToLower();`    | Set the string to lowercase                     |
+| `bool b = myString.Contains("Hello");`  | Check if a string contains "Hello", return bool |
+| `string s = myString.Replace("a","b");` | Replace "a" with "b" in the string              |
+| `string sub = myString.Substring(1,3);` | Get a part of the string (zero-based)           |
+
+Concatenating Multiple Strings
+
+```c#
+string s1 = "Learning C# "; // notice the extra space at the end
+string s2 = "is awesome";
+string s3 = s1 + s2;
+// Output: "Learning C3 is awesome"
+```
+
+Using String.Concat
+
+```c#
+string s1 = "Learning C# "; // notice the extra space at the end
+string s2 = "is awesome";
+string s3 = String.Concat(s1, s2);
+```
+
+Less-readable String Concatenation
+
+```c#
+string employeeName = "Bethany";
+int age = 34;
+string greetingText = "Hello " + employeeName + ", your are " + age + " years";
+// Output: Hello Bethany, you are 34 years
+```
+
+Using string.Format to Concatenate Strings
+
+```c#
+string employeeName = "Bethany";
+int age = 34;
+string greetingText = string.Format("Hello {0}, you are {1} years", employeeName, age);
+// Output: Hello Bethany, you are 34 years
+```
+
+String Interpolation (Often better and easier to read)
+
+```c#
+string employeeName = "Bethany";
+int age = 34;
+string greetingText = $"Hello {employeeName}, you are {age} years";
+// Output: Hello Bethany, you are 34 years
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
