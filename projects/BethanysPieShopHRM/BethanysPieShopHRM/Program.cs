@@ -2,35 +2,24 @@
 using System.Collections.Generic;
 using System.Xml.Linq;
 
-int a = 42;
-int aCopy = a;
-Console.WriteLine($"Value of a: {a} and value of copy of a: {aCopy}");
-aCopy = 100;
-Console.WriteLine($"Value of a: {a} and value of copy of a: {aCopy}");
-
 Console.WriteLine("Creating an employee");
 Console.WriteLine("--------------------\n");
 
 Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.br", new DateTime(1979,1,16), 25);
-Employee testEmployee = bethany;
-testEmployee.firstName = "Gill";
-testEmployee.DisplayEmployeeDetails();
-bethany.DisplayEmployeeDetails();
+
+bethany.PerformWork(25);
+
+int minimumBonus = 100;
+int bonusTax = 0;
+int receivedBonus = bethany.CalculatedBonusAndBonusTax(minimumBonus, ref bonusTax);
+Console.Write($"The minimum bonus is {minimumBonus}, the bonus tax is {bonusTax} and {bethany.firstName} has received a bonus of {receivedBonus}");
 
 /* Output:
  * 
- * Value of a: 42 and value of copy of a: 42
- * Value of a: 42 and value of copy of a: 100
- * 
  * Creating an employee
  * --------------------
- * First name:     Gill
- * Last name:      Smith
- * E-mail:                 bethany @snowball.br
- * Birthday:       16/01/1979
  * 
- * First name:     Gill
- * Last name:      Smith
- * E-mail:                 bethany @snowball.br
- * Birthday:       16/01/1979
+ * Bethany Smith has worked for 25 hour(s)!
+ * The employee got a bonus of 180 and the tax on the bonus is 20
+ * The minimum bonus is 100, the bonus tax is 20 and Bethany has received a bonus of 180
  */

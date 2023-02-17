@@ -64,5 +64,29 @@ namespace BethanysPieShopHRM
         {
             Console.WriteLine($"\nFirst name: \t{firstName}\nLast name: \t{lastName}\nE-mail: \t\t{email}\nBirthday: \t{birthDay.ToShortDateString()}\n");
         }
+
+        public int CalculateBonus (int bonus)
+        {
+            if (numberOfHoursWorked > 10)
+                bonus *= 2;
+
+            Console.WriteLine($"The employee got a bonus of {bonus}");
+            return bonus;
+        }
+
+        public int CalculatedBonusAndBonusTax(int bonus, ref int bonusTax)
+        {
+            if (numberOfHoursWorked > 10)
+                bonus *= 2;
+
+            if (bonus >= 200)
+            {
+                bonusTax = bonus / 10;
+                bonus -= bonusTax;
+            }
+
+            Console.WriteLine($"The employee got a bonus of {bonus} and the tax on the bonus is {bonusTax}");
+            return bonus;
+        }
     }
 }

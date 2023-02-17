@@ -3888,4 +3888,123 @@ public int AddTwoNumber(int a, ref int b)
 
 <!-- #endregion -->
 
+<!-- #region Demo Passing Parameters by Value and by Reference -->
+
+<details>
+<summary>Demo Passing Parameters by Value and by Reference</summary>
+
+<br/>
+
+- Passing parameters by value
+- Using ref to pass parameters by reference
+
+### by Value
+
+Employee.cs
+
+```c#
+
+...
+
+        public int CalculateBonus (int bonus)
+        {
+            if (numberOfHoursWorked > 10)
+                bonus *= 2;
+
+            Console.WriteLine($"The employee got a bonus of {bonus}");
+            return bonus;
+        }
+
+...
+
+```
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+Console.WriteLine("Creating an employee");
+Console.WriteLine("--------------------\n");
+
+Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.br", new DateTime(1979,1,16), 25);
+
+bethany.PerformWork(25);
+
+int minimumBonus = 100;
+int receivedBonus = bethany.CalculateBonus(minimumBonus);
+Console.WriteLine($"The minimum bonus is {minimumBonus} and {bethany.firstName} has received a bonus of {receivedBonus}");
+
+/* Output:
+ *
+ * Creating an employee
+ * --------------------
+ *
+ * Bethany Smith has worked for 25 hour(s)!
+ * The employee got a bonus of 200
+ * The minimum bonus is 100 and Bethany has received a bonus of 200
+ */
+```
+
+### by Reference
+
+Employee.cs
+
+```c#
+
+...
+
+        public int CalculatedBonusAndBonusTax(int bonus, ref int bonusTax)
+        {
+            if (numberOfHoursWorked > 10)
+                bonus *= 2;
+
+            if (bonus >= 200)
+            {
+                bonusTax = bonus / 10;
+                bonus -= bonusTax;
+            }
+
+            Console.WriteLine($"The employee got a bonus of {bonus} and the tax on the bonus is {bonusTax}");
+            return bonus;
+        }
+
+...
+
+```
+
+```c#
+using BethanysPieShopHRM;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+Console.WriteLine("Creating an employee");
+Console.WriteLine("--------------------\n");
+
+Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.br", new DateTime(1979,1,16), 25);
+
+bethany.PerformWork(25);
+
+int minimumBonus = 100;
+int bonusTax = 0;
+int receivedBonus = bethany.CalculatedBonusAndBonusTax(minimumBonus, ref bonusTax);
+Console.Write($"The minimum bonus is {minimumBonus}, the bonus tax is {bonusTax} and {bethany.firstName} has received a bonus of {receivedBonus}");
+
+/* Output:
+ *
+ * Creating an employee
+ * --------------------
+ *
+ * Bethany Smith has worked for 25 hour(s)!
+ * The employee got a bonus of 180 and the tax on the bonus is 20
+ * The minimum bonus is 100, the bonus tax is 20 and Bethany has received a bonus of 180
+ */
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
