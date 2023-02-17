@@ -3206,4 +3206,20 @@ if (bool.TryParse(enteredText, out bool b))
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Strings are a very important concept
+- Many methods available
+  - Concatenation
+  - Parsing
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
