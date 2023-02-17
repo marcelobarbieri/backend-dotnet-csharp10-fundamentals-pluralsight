@@ -3223,3 +3223,24 @@ if (bool.TryParse(enteredText, out bool b))
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Creating Classes and Objects -->
+
+## Creating Classes and Objects
+
+<!-- #region Introduction -->
+
+<details>
+<summary>Introduction</summary>
+
+<br/>
+
+- Creating Your First Class and Objects
+  - Understanding classes
+  - Creating the Employee class
+  - Using objects
+  </details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
