@@ -3158,4 +3158,38 @@ Comparing Strings
 
 <!-- #endregion -->
 
+<!-- #region Parsing from String to Other Types -->
+
+<details>
+<summary>Parsing from String to Other Types</summary>
+
+<br/>
+
+Use Parsing to Generate a Value from a String
+
+- Can cause issues though
+
+```c#
+string w = Console.ReadLine();
+double wage = double.Parse(w);
+
+bool active = bool.Parse("true");
+```
+
+Using TryParse
+
+- The out keyword will be covered in the next module
+
+```c#
+string enteredText = "true";
+if (bool.TryParse(enteredText, out bool b))
+{
+  Console.WriteLine($"The value is {b}");
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
