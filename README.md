@@ -3388,4 +3388,83 @@ You can trigger a build using CTRL + SHIFT + B (Shortcut for Build Solution)
 
 <!-- #endregion -->
 
+<!-- #region Using Objects -->
+
+<details>
+<summary>Using Objects</summary>
+
+<br/>
+
+Classes and Objects
+
+### Class
+
+![](./assets/classes-and-objects.png)
+
+> Classes are blueprints; objects are the real instances
+
+Creating a New Object
+
+![](./assets/creating-a-new-object.png)
+
+### Constructors
+
+- Called when instantiating an object happens
+- Default or custom
+- Used to set initial values
+
+Adding a Constructor with Parameters
+
+```c#
+public class Employee
+{
+  public string firstName;
+  public int age;
+
+  public Employee(string name, int ageValue);
+  {
+    firstName = name;
+    age = ageValue;
+  }
+}
+```
+
+> This on doesn´t have a return type.
+> Its name is the same as the class itself
+
+Using the Constructor
+
+![](./assets/using-the-constructor.png)
+
+Creating Objects using the Constructor
+
+![](./assets/creating-objects-using-the-constructor.png)
+
+The Default Constructor
+
+```c#
+public class Employee
+{
+  public Employee()
+  {
+
+  }
+}
+```
+
+Is there always a default constructor?
+
+- No! Only if we define no other constructors!
+
+| Expression                            | Description                  |
+| :------------------------------------ | :--------------------------- |
+| `Employee employee = new Employee();` | Instantiating the object     |
+| `employee.PerformWork();`             | Invoking a method            |
+| `employee.firstName = "Bethany";`     | Changing a field             |
+| `int wage = employee.ReceiveWage();`  | Return a value from a method |
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
