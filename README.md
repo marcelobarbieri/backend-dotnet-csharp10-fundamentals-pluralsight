@@ -3119,4 +3119,30 @@ string verbatimFilePath = @"C:\Documents\readment.txt";
 
 <!-- #endregion -->
 
+<!-- #region Testing Strings for Equality -->
+
+<details>
+<summary>Testing Strings for Equality</summary>
+
+<br/>
+
+Comparing Two Strings
+
+```c#
+string firstName = "Bethany";
+bool b1 = firstName == "Bethany"; // true
+bool b2 = firstName == "bethany"; // false
+bool b3 = firstName.Equals("Bethany"); // true
+```
+
+Comparing Strings Case-Insensitive
+
+```c#
+bool b = firstName.ToUpper() == anotherString.ToUpper();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
