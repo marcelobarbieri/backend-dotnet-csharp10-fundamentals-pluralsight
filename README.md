@@ -3694,3 +3694,27 @@ Console.WriteLine($"Wage paid for George (message from Program): {receivedWageBe
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Understanding Value Types and Reference Types -->
+
+## Understanding Value Types and Reference Types
+
+<!-- #region Introduction -->
+
+<details>
+<summary>Introduction</summary>
+
+<br/>
+
+- Value types and reference types
+- Passing parameters to methods
+- Strings are reference types too
+- Creating custom types
+  - Enumeration
+  - Struct
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
