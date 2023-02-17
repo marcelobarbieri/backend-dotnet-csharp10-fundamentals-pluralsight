@@ -3677,4 +3677,20 @@ Console.WriteLine($"Wage paid for George (message from Program): {receivedWageBe
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Classes are the main building block in C#
+- Define fields and methods
+- Are the blueprint for creation of objects
+  - Constructors
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
