@@ -3717,4 +3717,56 @@ Console.WriteLine($"Wage paid for George (message from Program): {receivedWageBe
 
 <!-- #endregion -->
 
+<!-- #region Value Types and Reference Types -->
+
+<details>
+<summary>Value Types and Reference Types</summary>
+
+<br/>
+
+Types in .NET and C#
+
+- Value Types
+- Reference Types
+
+### Value Types
+
+- Int, float, double, char
+- Fixed size, allocated by compiler on stack
+- Value is copied to this memory location
+
+Working with Value Types
+
+![](./assets/working-with-value-types.png)
+
+### Reference Types
+
+- Allocated on heap
+- Stack contains just a pointer to the memory address
+- Classes are reference types
+
+Working with Reference Types
+
+![](./assets/working-with-reference-types.png)
+
+Understanding Classes Are Reference Types
+
+```c#
+Employee emp1 = new Employee();
+emp1.firstName = "Bethany";
+
+Employee emp2 = emp1;
+emp2.firstName = "George";
+
+string check = emp1.firstName; // check will be George
+```
+
+What Just Happened?
+
+![](./assets/what-just-happened.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
