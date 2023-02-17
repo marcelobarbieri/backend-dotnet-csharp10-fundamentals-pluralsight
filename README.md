@@ -12,6 +12,8 @@ https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals/table-of-con
 
 <!-- #endregion -->
 
+<!-- #endregion -->
+
 <!-- #region Getting Started with C# 10 and .NET 6 -->
 
 ## Getting Started with C# 10 and .NET 6
@@ -3821,6 +3823,68 @@ bethany.DisplayEmployeeDetails();
 ```
 
 </details>
+
+<!-- #endregion -->
+
+<!-- #region Method Parameters -->
+
+<details>
+<summary>Method Parameters</summary>
+
+<br/>
+
+Passing Data to Methods
+
+Passing Parameters
+
+|               By value               |               By reference               |
+| :----------------------------------: | :--------------------------------------: |
+| Default if nothing else is specified | Require use of ref keyword on parameters |
+
+### Passing parameters by value
+
+- Default way of passing parameters
+- A copy is created for the method
+- Value in caller stays the same
+
+```c#
+int a = 33;
+int b = 44;
+
+AddTwoNumbers(a,b);
+
+public int AddTwoNumber(int a, int b)
+{
+  b += 10;
+  int sum = a + b;
+
+  return sum;
+}
+```
+
+### Passing parameters by reference
+
+- A reference to the value is passed
+- No copy is made
+- Changes made in method affect original values
+- `ref` keyword is used
+
+```c#
+int a = 33;
+int b = 44;
+
+AddTwoNumbers(a, ref b);
+
+public int AddTwoNumber(int a, ref int b)
+{
+  b += 10;
+  int sum = a + b;
+
+  return sum;
+}
+```
+
+<details>
 
 <!-- #endregion -->
 
