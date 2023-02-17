@@ -3239,7 +3239,129 @@ if (bool.TryParse(enteredText, out bool b))
   - Understanding classes
   - Creating the Employee class
   - Using objects
-  </details>
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Understanding Classes and Objects -->
+
+<details>
+<summary>Understanding Classes and Objects</summary>
+
+<br/>
+
+### Understanding Classes
+
+<br/>
+
+`With just variables, we only get so far.`
+
+If we want to represent a structure, we need a custom type
+
+Typical models
+
+- Employee
+- Customer
+- Message
+- Transaction
+
+Custom Types
+
+- Class (Most commonly used)
+- Struct
+
+<br/>
+
+Classes in C#
+
+- Blueprint of an object
+- Defines data and funcionality to work on its data
+- Created using class keyword
+- Foundation of OO (object-orientation)
+
+In C#, most code will live inside a class
+
+- Program.cs and Utilities class used up until now
+- Most code will live inside a class
+
+The Class Template
+
+```c#
+public class MyClass
+{
+  public int a;
+  public string b;
+
+  public void MyMethod()
+  {
+    Console.WriteLine("Hello world");
+  }
+}
+```
+
+Contents of a Class
+
+- Fields
+- Properties
+- Methods
+- Events
+
+<br/>
+
+### Creating the Employee Class
+
+Thinking of an Employee in real life
+
+- Identity: Name
+- Attributes: Age, Wage
+- Behaviors: Get pai, Perform work
+
+```c#
+public class Employee
+{
+  // class code will come here
+}
+```
+
+Adding Fields
+
+- Class-level variables
+- Contain value
+
+```c#
+public class Employee
+{
+  public string firstName;
+  public int age;
+}
+```
+
+Adding Methods
+
+- Perform actions
+- Often change the state
+
+```c#
+public class Employee
+{
+  public string firstName;
+  public int age;
+
+  public void PerformWork()
+  {
+    // method code goes here
+  }
+}
+```
+
+Access Modifiers
+
+- `public` (outside the class)
+- `private` (inside the class)
+- `protected` (available for the class and its inheritors)
+
+</details>
 
 <!-- #endregion -->
 
