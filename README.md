@@ -3365,4 +3365,27 @@ Access Modifiers
 
 <!-- #endregion -->
 
+<!-- #region Demo Creating the Employee Class  -->
+
+<details>
+<summary>Demo Creating the Employee Class</summary>
+
+<br/>
+
+- Creating the Employee class
+- Adding data using fields
+- Adding methods
+
+Creating a new project Console App named "BethanysPieShopHRM" and Framework .NET 6.0
+
+> Project: [BethanysPieShopHRM](./projects/BethanysPieShopHRM/)
+
+A field is a variable that is declared directly at the class level
+
+You can trigger a build using CTRL + SHIFT + B (Shortcut for Build Solution)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
