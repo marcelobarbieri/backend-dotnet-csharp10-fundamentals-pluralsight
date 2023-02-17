@@ -3192,4 +3192,18 @@ if (bool.TryParse(enteredText, out bool b))
 
 <!-- #endregion -->
 
+<!-- #region Demo Parsing Strings -->
+
+<details>
+<summary>Demo Parsing Strings</summary>
+
+<br/>
+
+- Parsing string into other types
+- Using `TryParse`
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
