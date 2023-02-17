@@ -3145,4 +3145,17 @@ bool b = firstName.ToUpper() == anotherString.ToUpper();
 
 <!-- #endregion -->
 
+<!-- #region Demo Comparing Strings -->
+
+<details>
+<summary>Demo Comparing Strings</summary>
+
+<br/>
+
+Comparing Strings
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->

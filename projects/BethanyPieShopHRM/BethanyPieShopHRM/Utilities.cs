@@ -8,26 +8,23 @@ namespace BethanyPieShopHRM
 {
     internal class Utilities
     {
-        public static void UsingEscapeCharacters()
+        public static void UsingStringEquality()
         {
-            string firstName = "Bethany";
-            string lastName = "Smith";
+            string name1 = "Bethany";
+            string name2 = "BETHANY";
 
-            string displayName = $"Welcome!\n{firstName}\t{lastName}";
-            Console.WriteLine(displayName);
-
+            Console.WriteLine("Are both names equal? " + (name1 == name2));
+            Console.WriteLine("Is name equal to Bethany? " + (name1 == "Bethany"));
+            Console.WriteLine("Is name equal to BETHANY? " + (name2.Equals("BETHANY")));
+            Console.WriteLine("Is lowercase name equal to bethany? " + (name1.ToLower() == "bethany"));
             /*
              * Output:
              * 
-             * Welcome!
-             * Bethany Smith
+             * Are both names equal? False
+             * Is name equal to Bethany? True
+             * Is name equal to BETHANY? True
+             * Is lowercase name equal to bethany? True
              */
-
-            // string invalidFilePath = "C:\data\employeelist.xlsx";
-            // string filePath = "C:\\data\\employeelist.xlsx";
-            string filePath = @"C:\data\employeelist.xlsx";
-
-            string marketingTagLine = "Baking the \"best pies\" ever";
         }
     }
 }
