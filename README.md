@@ -3105,4 +3105,18 @@ string verbatimFilePath = @"C:\Documents\readment.txt";
 
 <!-- #endregion -->
 
+<!-- #region Demo Using Escape Characters -->
+
+<details>
+<summary>Demo Using Escape Characters</summary>
+
+<br/>
+
+- Escaping text
+- Using verbatim strings
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->

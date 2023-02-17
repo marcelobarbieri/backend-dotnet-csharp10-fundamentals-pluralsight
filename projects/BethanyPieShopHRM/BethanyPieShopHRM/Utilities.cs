@@ -8,32 +8,26 @@ namespace BethanyPieShopHRM
 {
     internal class Utilities
     {
-        public static void ManipulatingStrings()
+        public static void UsingEscapeCharacters()
         {
             string firstName = "Bethany";
             string lastName = "Smith";
 
-            string fullName = firstName + " " + lastName;
-            string employeeIdentification = String.Concat(firstName,lastName);
+            string displayName = $"Welcome!\n{firstName}\t{lastName}";
+            Console.WriteLine(displayName);
 
-            string empId = firstName.ToLower() + "-" + lastName.Trim().ToLower();
-
-            int lenght = empId.Length;
-
-            if (fullName.Contains("beth") || fullName.Contains("Beth"))
-            {
-                Console.WriteLine("It´s Bethany!");
-            }
-
-            string subString = fullName.Substring(1, 3);
-            Console.WriteLine("Characters 2 to 4 of fullName are " + subString);
-
-            string userNameWithInterpolation = $"{firstName}-{lastName}";
-
-            /* Output:
-             * It´s Bethany!
-             * Characters 2 to 4 of fullName are eth
+            /*
+             * Output:
+             * 
+             * Welcome!
+             * Bethany Smith
              */
+
+            // string invalidFilePath = "C:\data\employeelist.xlsx";
+            // string filePath = "C:\\data\\employeelist.xlsx";
+            string filePath = @"C:\data\employeelist.xlsx";
+
+            string marketingTagLine = "Baking the \"best pies\" ever";
         }
     }
 }
