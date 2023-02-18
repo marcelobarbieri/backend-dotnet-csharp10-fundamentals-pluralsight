@@ -4140,4 +4140,127 @@ string list = stringBuilder.ToString();
 
 <!-- #endregion -->
 
+<!-- #region Demo Strings Are Reference Type Too -->
+
+<details>
+<summary>Demo Strings Are Reference Type Too</summary>
+
+<br/>
+
+- Understanding string immutability
+- Using the StringBuilder
+
+Program.cs
+
+```c#
+string name = "bethany";
+string anotherName = name;
+name += " smith";
+
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Another name: " + anotherName);
+
+/* Output:
+ *
+ * Name: bethany smith
+ * Another name: bethany
+ */
+
+/* Explanation:
+ *
+ * string name = "bethany";
+ *      Stack  1: pointer to "bethany
+ *      Memory 1: "bethany"
+ *
+ * string anotherName = name;
+ *      Stack  2: pointer to "bethany" too
+ *
+ * name += " smith";
+ *      Memory 2: " smith"
+ *      Memory 3: "bethany smith" (+=)
+ *      Stack  1: pointer to "bethany smith"
+ *
+ * Summary:
+ *      Stack  1: pointer to "bethany smith"
+ *      Stack  2: pointer to "bethany"
+ *      Memory 1: "bethany"
+ *      Memory 2: " smith"
+ *      Memory 3: "bethany smith"
+ */
+```
+
+Program.cs
+
+```c#
+string name = "bethany";
+name += " smith";
+
+string upperCaseName = name.ToUpper();
+
+Console.WriteLine("Name: " + name);
+Console.WriteLine("Uppercase name: " + upperCaseName);
+
+/* Output:
+ *
+ * Name: bethany smith
+ * Uppercase name: BETHANY SMITH
+ */
+
+/* Explanation:
+ *
+ * string name = "bethany";
+ *      Memory 1: "bethany"
+ *      Stack  1: pointer to Memory 1
+ *
+ * name += " smith";
+ *      Memory 2: " smith"
+ *      Memory 3: "bethany smith" (+=)
+ *      Stack  1: pointer to Memory 3
+ *
+ * string upperCaseName = name.ToUpper();
+ *      Memory 4: "BETHANY SMITH" (ToUpper())
+ *      Stack  2: point to Memory 4
+ *
+ * Summary:
+ *      Stack  1: pointer to Memory 3
+ *      Stack  2: pointer to Memory 4
+ *      Memory 1: "bethany"
+ *      Memory 2: " smith"
+ *      Memory 3: "bethany smith"
+ *      Memory 4: "BETHANY SMITH"
+ */
+```
+
+Program.cs
+
+```c#
+string indexes = string.Empty;
+
+for (int i = 0; i < 2500; i++)
+{
+    indexes += i.ToString();
+    // every time that do this, a new index string is going to be created
+}
+```
+
+Program.cs
+
+```c#
+using System.Text;
+
+string firstName = "Bethany";
+string lastName = "Smith";
+
+StringBuilder builder = new StringBuilder();
+builder.Append("Last name: ");
+builder.AppendLine(lastName);
+builder.Append("First name: ");
+builder.AppendLine(firstName);
+string result = builder.ToString();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
