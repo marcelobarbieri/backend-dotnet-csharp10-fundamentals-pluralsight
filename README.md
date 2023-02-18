@@ -4092,4 +4092,52 @@ Employee.cs
 
 <!-- #endregion -->
 
+<!-- #region Strings Are Reference Type Too -->
+
+<details>
+<summary>Strings Are Reference Type Too</summary>
+
+<br/>
+
+Let´s Append to an Existing String
+
+```c#
+string a = "Hello";
+string b;
+
+b = a;
+b += " world";
+Console.WriteLine(a); // Output: Hello
+```
+
+![](./assets/strings-are-reference-types-1.png)
+![](./assets/strings-are-reference-types.png)
+
+> They aren´t created on the stack. They are created on the heap.
+
+Strings are immutable
+
+- The new string b was created até the heap becaus de strings are imutable.
+- Once created, a string cannot be changed.
+- Every operation you do on a string will result in a new one being created.
+
+String immutability can have a performance impact!
+
+- Loop actions or many concatenate actions can cause high memory use!
+
+Introducing the `StringBuilder` Classe
+
+```c#
+StringBuilder stringBuilder = new StringBuilder();
+stringBuilder.Append("Employee list");
+stringBuilder.AppendLine("Bethany Smith");
+stringBuilder.AppendLine("George Jones");
+stringBuilder.AppendLine("Gill Cleeren");
+string list = stringBuilder.ToString();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
