@@ -3884,7 +3884,7 @@ public int AddTwoNumber(int a, ref int b)
 }
 ```
 
-<details>
+</details>
 
 <!-- #endregion -->
 
@@ -3896,7 +3896,8 @@ public int AddTwoNumber(int a, ref int b)
 <br/>
 
 - Passing parameters by value
-- Using ref to pass parameters by reference
+- Using `ref` to pass parameters by reference
+- The `ref` keyword required us to ensure that the variable was initialized
 
 ### by Value
 
@@ -4001,6 +4002,90 @@ Console.Write($"The minimum bonus is {minimumBonus}, the bonus tax is {bonusTax}
  * The employee got a bonus of 180 and the tax on the bonus is 20
  * The minimum bonus is 100, the bonus tax is 20 and Bethany has received a bonus of 180
  */
+```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo Using out -->
+
+<details>
+<summary>Demo Using out</summary>
+
+<br/>
+
+Using the `out` Keyword
+
+- Out values don´t need to be initialized outside the method
+- Inside the method before exits all out parameters need to have a value
+- Multiple values can be returned
+
+```c#
+public static int AddTwoNumbers(int a, out int b, out int c)
+{
+  b = 10;
+  int sum = a + b;
+  c = sum / 10;
+
+  return sum;
+}
+```
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+Console.WriteLine("Creating an employee");
+Console.WriteLine("--------------------\n");
+
+Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.br", new DateTime(1979,1,16), 25);
+
+bethany.PerformWork(25);
+
+int minimumBonus = 100;
+int bonusTax;
+int receivedBonus = bethany.CalculatedBonusAndBonusTaxOut(minimumBonus, out bonusTax);
+Console.Write($"The minimum bonus is {minimumBonus}, the bonus tax is {bonusTax} and {bethany.firstName} has received a bonus of {receivedBonus}");
+
+/* Output:
+ *
+ * Creating an employee
+ * --------------------
+ *
+ * Bethany Smith has worked for 25 hour(s)!
+ * The employee got a bonus of 180 and the tax on the bonus is 20
+ * The minimum bonus is 100, the bonus tax is 20 and Bethany has received a bonus of 180
+ */
+```
+
+Employee.cs
+
+```c#
+
+...
+
+        public int CalculatedBonusAndBonusTaxOut(int bonus, out int bonusTax)
+        {
+            bonusTax = 0;
+            if (numberOfHoursWorked > 10)
+                bonus *= 2;
+
+            if (bonus >= 200)
+            {
+                bonusTax = bonus / 10;
+                bonus -= bonusTax;
+            }
+
+            Console.WriteLine($"The employee got a bonus of {bonus} and the tax on the bonus is {bonusTax}");
+            return bonus;
+        }
+
+...
+
 ```
 
 </details>

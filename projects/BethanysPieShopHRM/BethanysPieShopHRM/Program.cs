@@ -10,8 +10,8 @@ Employee bethany = new Employee("Bethany", "Smith", "bethany@snowball.br", new D
 bethany.PerformWork(25);
 
 int minimumBonus = 100;
-int bonusTax = 0;
-int receivedBonus = bethany.CalculatedBonusAndBonusTax(minimumBonus, ref bonusTax);
+int bonusTax;
+int receivedBonus = bethany.CalculatedBonusAndBonusTaxOut(minimumBonus, out bonusTax);
 Console.Write($"The minimum bonus is {minimumBonus}, the bonus tax is {bonusTax} and {bethany.firstName} has received a bonus of {receivedBonus}");
 
 /* Output:
