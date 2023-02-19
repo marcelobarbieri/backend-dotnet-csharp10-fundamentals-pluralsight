@@ -1,11 +1,17 @@
-﻿using System.Text;
+﻿using BethanysPieShopHRM;
 
-string firstName = "Bethany";
-string lastName = "Smith";
+Console.WriteLine("Creating an employee");
+Console.WriteLine("--------------------\n");
 
-StringBuilder builder = new StringBuilder();
-builder.Append("Last name: ");
-builder.AppendLine(lastName);
-builder.Append("First name: ");
-builder.AppendLine(firstName);
-string result = builder.ToString();
+Employee bethany = new Employee("Bethany","Smith","bethany@snowball.br", new DateTime(1979,1,16),25);
+
+string bethanyAsJson = bethany.ConvertToJson();
+Console.WriteLine(bethanyAsJson);
+
+/* Output:
+ * 
+ * Creating an employee
+ * --------------------
+ * 
+ * {"firstName":"Bethany","lastName":"Smith","email":"bethany@snowball.br","numberOfHoursWorked":0,"wage":0.0,"hourlyRate":25.0,"birthDay":"1979-01-16T00:00:00"}
+ */
