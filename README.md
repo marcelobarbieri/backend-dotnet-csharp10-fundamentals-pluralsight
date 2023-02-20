@@ -4399,4 +4399,33 @@ Employee.cs
 
 <!-- #endregion -->
 
+<!-- #region Creating Enumerations -->
+
+<details>
+<summary>Creating Enumerations</summary>
+
+<br/>
+
+Using an Enumeration in C#
+
+- Named constantes for improved readability
+- Value type
+- Uses `enum` keyword
+
+Creating an Enumeration
+
+```c#
+enum EmployeeType
+{
+  Sales, //0
+  Manager, //1
+  Research, //2
+  StoreManager //3
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
