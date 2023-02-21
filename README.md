@@ -4602,4 +4602,52 @@ struct WorkTask
 
 <!-- #endregion -->
 
+<!-- #region Demo Creating a Struct -->
+
+<details>
+<summary>Demo Creating a Struct</summary>
+
+<br/>
+
+- Creating a struct
+- Using the struct
+
+WorkTask.cs
+
+```c#
+namespace BethanysPieShopHRM
+{
+    internal struct WorkTask
+    {
+        public string description;
+        public int hours;
+
+        public void PerformWorkTask()
+        {
+            Console.WriteLine($"Task {description} of {hours} hour(s) has been performed");
+        }
+    }
+}
+```
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM;
+
+WorkTask task;
+task.description = "Bake delicious pies";
+task.hours = 3;
+task.PerformWorkTask();
+
+/* Output:
+ *
+ * Task Bake delicious pies of 3 hour(s) has been performed
+ */
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
