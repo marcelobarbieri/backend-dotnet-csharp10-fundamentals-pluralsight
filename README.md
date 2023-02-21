@@ -4667,3 +4667,26 @@ task.PerformWorkTask();
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Doing More with Classes and Custom Types -->
+
+## Doing More with Classes and Custom Types
+
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Grouping classes in namespaces
+- Introducing static data
+- Working with null
+- Understanding garbage collection
+- Using a class library
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
