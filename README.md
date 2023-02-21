@@ -12,8 +12,6 @@ https://app.pluralsight.com/library/courses/c-sharp-10-fundamentals/table-of-con
 
 <!-- #endregion -->
 
-<!-- #endregion -->
-
 <!-- #region Getting Started with C# 10 and .NET 6 -->
 
 ## Getting Started with C# 10 and .NET 6
@@ -4565,6 +4563,39 @@ Console.WriteLine($"Wage paid (message from Program): {receivedWageGeorge}");
  * George Jones has received a wage of 420 for 14 hour(s) of work.
  * Wage paid (message from Program): 420
  */
+```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Working with Structs -->
+
+<details>
+<summary>Working with Structs</summary>
+
+<br/>
+
+Creating a Struct
+
+- Represents a custom data structure
+- Value type
+- Can be new´ed
+- Can contains methos and other members
+
+Adding a Method to the Struct
+
+```c#
+struct WorkTask
+{
+  public string description;
+  public int hours;
+
+  public void PerformWorkTask()
+  {
+    //Code to perform task
+  }
+}
 ```
 
 </details>
