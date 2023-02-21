@@ -4672,10 +4672,10 @@ task.PerformWorkTask();
 
 ## Doing More with Classes and Custom Types
 
-<!-- #region Summary -->
+<!-- #region Introduction -->
 
 <details>
-<summary>Summary</summary>
+<summary>Introduction</summary>
 
 <br/>
 
@@ -4684,6 +4684,39 @@ task.PerformWorkTask();
 - Working with null
 - Understanding garbage collection
 - Using a class library
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Grouping Classes in Namespaces -->
+
+<details>
+<summary>Grouping Classes in Namespaces</summary>
+
+<br/>
+
+There are a lot of types...
+
+- Organized in "folders": namespaces
+- Avoids naming collisions
+
+Namespaces
+
+- Keep class names separate
+- Used throughout .NET
+- Organize our own classes in custom namespaces
+- Make namespace available through `using` directive
+
+Putting a Class into a Namespace
+
+```c#
+namespace BethanysPieShop.HR
+{
+  public class Employee
+  { }
+}
+```
 
 </details>
 
