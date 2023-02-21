@@ -4650,4 +4650,20 @@ task.PerformWorkTask();
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Types can either be value type or reference types
+- .NET itself contains many types
+- Classes are the most commonly used way to create custom reference types
+- Enums and structs are custom value types
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
