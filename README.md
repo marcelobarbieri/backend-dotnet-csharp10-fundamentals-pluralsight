@@ -4722,4 +4722,22 @@ namespace BethanysPieShop.HR
 
 <!-- #endregion -->
 
+<!-- #region Demo: Working with Namespaces -->
+
+<details>
+<summary>Demo: Working with Namespaces</summary>
+
+<br/>
+
+- Grouping multiple classes into namespaces
+- Introducing the `using` directive
+
+Right-click on the project and select Properties
+
+![](./assets/default-namespace.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->

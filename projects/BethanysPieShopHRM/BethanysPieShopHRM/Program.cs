@@ -1,4 +1,4 @@
-﻿using BethanysPieShopHRM;
+﻿using BethanysPieShopHRM.HR;
 
 WorkTask task;
 task.description = "Bake delicious pies";
