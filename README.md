@@ -4740,4 +4740,59 @@ Right-click on the project and select Properties
 
 <!-- #endregion -->
 
+<!-- #region Introducing Static Data -->
+
+<details>
+<summary>Introducing Static Data</summary>
+
+<br/>
+
+Objects and Their Data
+
+![](./assets/objects-and-their-data-1.png)
+![](./assets/objects-and-their-data-2.png)
+
+> Defining a value as static basically means it´s defined on the class level.
+
+Adding Static Data
+
+```c#
+public class Employee
+{
+  public static double bonusPercentage = 0.15;
+}
+```
+
+Changing Static Data with a Static Method
+
+```c#
+public class Employee
+{
+  public static double bonusPercentage = 0.15;
+  public static void IncreaseBonusPercentage(double newPercentage)
+  {
+    bonusPercentage = newPercentage;
+  }
+}
+```
+
+Invoking a Static Method
+
+- Not on an object but on the class instead
+
+```c#
+static void Main(strings[] args)
+{
+  Employee.IncreaseBonusPercentage(0.2); //Note the class name, not an object!
+}
+```
+
+Calling Static Methods
+
+![](./assets/calling-static-methods.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
