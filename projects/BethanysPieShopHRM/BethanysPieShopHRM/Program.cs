@@ -1,18 +1,21 @@
 ﻿using BethanysPieShopHRM.HR;
 
-// Employee mysteryEmployee = null;
-// mysteryEmployee.DisplayEmployeeDetails();
+List<Employee> employess = new List<Employee>();
+for (int i = 0;i < 5000000; i++)
+{
+    Employee randomEmploye = new Employee(
+        Guid.NewGuid().ToString(),
+        Guid.NewGuid().ToString(),
+        Guid.NewGuid().ToString(),
+        new DateTime(1979, 1, 16),
+        null,
+        EmployeeType.StoreManager);
+    employess.Add(randomEmploye);
+}
 
-/* Output:
- * 
- * System.NullReferenceException: 'Object reference not set to an instance of an object.'
- * mysteryEmployee was null.
- */
+employess.Clear();
+employess = null;
 
-Employee bethany = new Employee(
-    "Bethany",
-    "Smith",
-    "bethany@snowball.be", 
-    new DateTime(1979,1,16),
-    null,
-    EmployeeType.Manager);
+GC.Collect();
+
+Console.ReadLine();

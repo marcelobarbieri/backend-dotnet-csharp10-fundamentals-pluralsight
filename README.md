@@ -5146,6 +5146,8 @@ Employee bethany = new Employee(
 <details>
 <summary>Understanding Garbage Collection</summary>
 
+<br/>
+
 Working With Objects
 
 ![](./assets/working-with-objects-1.png)
@@ -5162,6 +5164,61 @@ Understanding Garbage Collection
 > If no reference is pointing to the object, it is considered unreachable, and it will be removed from memory automatically.
 
 <br/>
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo: Using Garbage Collection -->
+
+<details>
+<summary>Demo: Using Garbage Collection</summary>
+
+<br/>
+
+- Looking at garbage collection
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM.HR;
+
+List<Employee> employess = new List<Employee>();
+for (int i = 0;i < 5000000; i++)
+{
+    Employee randomEmploye = new Employee(
+        Guid.NewGuid().ToString(),
+        Guid.NewGuid().ToString(),
+        Guid.NewGuid().ToString(),
+        new DateTime(1979, 1, 16),
+        null,
+        EmployeeType.StoreManager);
+    employess.Add(randomEmploye);
+}
+
+employess.Clear();
+employess = null;
+
+GC.Collect();
+
+Console.ReadLine();
+```
+
+> Guid.NewGuid() creates a unique ID which we use here as random string
+
+![](./assets/using-garbage-collection.png)
+
+> Reached the end of the line, and still the memory is not cleared. Although the list of employee and therefor, all the objects in the employee list are orphans, they haven´t been cleared by garbage collection. That is also because we are running the application in debug mode and that tends to trigger garbage collection at different points.
+
+![](./assets/indicates-the-start-of-managed-heap-garbage-collection.png)
+
+> All these yellow markers here are actually runs off the garbage collector, unforced, as you can see. .NET was getting a bit worried, and it saw the memory increase that quickly, so it tried to do a garbage collect; however, there were no objects to delete because they were all in that list at that point.
+
+```c#
+GC.Collect();
+```
+
+![](./assets/indicates-the-start-of-managed-heap-garbage-collection-1.png)
 
 </details>
 
