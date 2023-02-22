@@ -5010,4 +5010,43 @@ Employee.DisplayTaxRate();
 
 <!-- #endregion -->
 
+<!-- #region Working with Null -->
+
+<details>
+<summary>Working with Null</summary>
+
+<br/>
+
+Understanding null
+
+![](./assets/understanding-null-1.png)
+![](./assets/understanding-null-2.png)
+![](./assets/understanding-null-3.png)
+
+Using a Non-initialized Value
+
+```c#
+Employee employee = null;
+employee.PerformWork(); //runtime error
+```
+
+Setting the Reference to null
+
+![](./assets/understanding-null-4.png)
+
+Introducing Nullable Value Types
+
+```c#
+int? a = 10;
+int? b = null;
+if (b.HasValue)
+{
+  Console.WriteLine("We have a value");
+}
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
