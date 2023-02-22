@@ -5141,4 +5141,30 @@ Employee bethany = new Employee(
 
 <!-- #endregion -->
 
+<!-- #region Understanding Garbage Collection -->
+
+<details>
+<summary>Understanding Garbage Collection</summary>
+
+Working With Objects
+
+![](./assets/working-with-objects-1.png)
+![](./assets/working-with-objects-2.png)
+![](./assets/working-with-objects-3.png)
+
+Understanding Garbage Collection
+
+![](./assets/understanding-garbage-collection-1.png)
+![](./assets/understanding-garbage-collection-2.png)
+![](./assets/understanding-garbage-collection-3.png)
+![](./assets/understanding-garbage-collection-4.png)
+
+> If no reference is pointing to the object, it is considered unreachable, and it will be removed from memory automatically.
+
+<br/>
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
