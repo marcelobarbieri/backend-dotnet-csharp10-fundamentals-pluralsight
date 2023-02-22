@@ -5224,4 +5224,44 @@ GC.Collect();
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using a Class Library -->
+
+<details>
+<summary>Demo: Using a Class Library</summary>
+
+<br/>
+
+Using a Class from an External Library
+
+![](./assets/using-a-class-from-an-external-library.png)
+
+Demo
+
+![](./assets/add-project-reference.png)
+![](./assets/add-project-reference-1.png)
+![](./assets/add-project-reference-2.png)
+
+Employee.cs
+
+```c#
+using BethanysPieShopHRM.Logic;
+
+...
+
+        public double CalculateWage()
+        {
+            WageCalculations wageCalculations = new WageCalculations();
+            double calculateValue = wageCalculations.ComplexWageCalculation(wage, taxRage, 3, 42);
+            return calculateValue;
+        }
+
+...
+```
+
+> Use CTLR + R then CTRL + R, or CTRL + RR to let Visual Studio do the renaming for you
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->

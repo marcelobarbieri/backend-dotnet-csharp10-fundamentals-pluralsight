@@ -1,10 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using BethanysPieShopHRM.Logic;
+using Newtonsoft.Json;
 
 namespace BethanysPieShopHRM.HR
 {
@@ -140,6 +135,13 @@ namespace BethanysPieShopHRM.HR
         public static void DisplayTaxRate()
         {
             Console.WriteLine($"The current tax rate is {taxRate}");
+        }
+
+        public double CalculateWage()
+        {
+            WageCalculations wageCalculations = new WageCalculations();
+            double calculateValue = wageCalculations.ComplexWageCalculation(wage, taxRage, 3, 42);
+            return calculateValue;
         }
     }
 }
