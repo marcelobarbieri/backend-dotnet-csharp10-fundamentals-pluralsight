@@ -5049,4 +5049,96 @@ if (b.HasValue)
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using Null -->
+
+<details>
+<summary>Demo: Using Null</summary>
+
+<br/>
+
+- Handling null references at runtime
+- Working with nullable types
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM.HR;
+
+Employee mysteryEmployee = null;
+mysteryEmployee.DisplayEmployeeDetails();
+
+/* Output:
+ *
+ * System.NullReferenceException: 'Object reference not set to an instance of an object.'
+ * mysteryEmployee was null.
+ */
+```
+
+Employee.cs
+
+```c#
+...
+
+        public double? hourlyRate;
+
+...
+
+        public Employee(string first, string last, string em, DateTime bd, double? rate, EmployeeType empType)
+        {
+            firstName = first;
+            lastName = last;
+            email = em;
+            birthDay = bd;
+            hourlyRate = rate ?? 10;
+            employeeType = empType;
+        }
+
+        public double ReceiveWage(bool resetHours = true)
+        {
+            double wageBeforeTax = 0.0;
+
+            if (employeeType == EmployeeType.Manager)
+            {
+                Console.WriteLine($"An extra was added to the wage since {firstName} is a manager!");
+                wageBeforeTax = numberOfHoursWorked * hourlyRate.Value * 1.25;
+            }
+            else
+            {
+                wageBeforeTax = numberOfHoursWorked * hourlyRate.Value;
+            }
+
+            double taxAmount = wageBeforeTax * taxRate;
+
+            wage = wageBeforeTax - taxAmount;
+
+            Console.WriteLine($"{firstName} {lastName} has received a wage of {wage} for {numberOfHoursWorked} hour(s) of work.");
+
+            if (resetHours)
+                numberOfHoursWorked = 0;
+
+            return wage;
+        }
+
+...
+
+```
+
+Program.cs
+
+```c#
+using BethanysPieShopHRM.HR;
+
+Employee bethany = new Employee(
+    "Bethany",
+    "Smith",
+    "bethany@snowball.be",
+    new DateTime(1979,1,16),
+    null,
+    EmployeeType.Manager);
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
