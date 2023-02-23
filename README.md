@@ -5826,3 +5826,26 @@ foreach (Employee employee in employees)
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Understanding the Fundamentals of Object-orientation -->
+
+## Understanding the Fundamentals of Object-orientation
+
+<!-- #region Module Introduction -->
+
+<details>
+<summary>Module Introduction</summary>
+
+<br/>
+
+- Understanding object-oriented programming in C#
+- Applying encapsulation
+- Adding inheritance
+- Using polymorphism
+- Introducing interfaces
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
