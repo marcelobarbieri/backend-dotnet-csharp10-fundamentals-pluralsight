@@ -5906,4 +5906,113 @@ Polymorphism
 
 <!-- #endregion -->
 
+<!-- #region Adding Encapsulation -->
+
+<details>
+<summary>Adding Encapsulation</summary>
+
+<br/>
+
+So Far, Our Data Is Stored in Fields
+
+```c#
+public class Employee
+{
+  public string firstName;
+  public int age;
+
+  public Employee(string name, int ageValue)
+  {
+    firstName = name;
+    age = ageValue;
+  }
+}
+```
+
+Manipulating a Class´s Data
+
+- Other classes can directly change the field data
+
+```c#
+Employee employee1 = new Employee();
+employee1.firstName = "Bethany";
+```
+
+Access to class data
+
+- If data is public, everyone can change the data of an object
+
+Adding Methods to Alter Data
+
+```c#
+public class Employee
+{
+  private string firstName;
+  private int age;
+
+  public int GetAge()
+  {
+    return age;
+  }
+
+  public void SetAge(int newAge)
+  {
+    age = newAge;
+  }
+}
+```
+
+Using methods
+
+- Syntax-wise, this is not ideal
+- Solution in C# to enforce encapsulation: Properties
+
+Introducing Properties
+
+```c#
+public class Employee
+{
+  private string firstName;
+  public string FirstName
+  {
+    get { return firstName; }
+    set
+    {
+      firstName = value;
+    }
+  }
+}
+```
+
+```c#
+public class Employee
+{
+  private int age;
+  public int Age
+  {
+    get { return age; }
+    set
+    {
+      age = value;
+    }
+  }
+}
+```
+
+C# Properties
+
+- Wraps data (fields) of a class
+- Hide implementation
+- Define get and set implementation
+
+| Expression                               | Description                          |
+| :--------------------------------------- | :----------------------------------- |
+| `Employee employee = new Employee();`    | Instantiating the object             |
+| `employee.FirstName = "Bethany";`        | Setting a value through a property   |
+| `int empFirstName = employee.FirstName;` | Getting the value through a property |
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
