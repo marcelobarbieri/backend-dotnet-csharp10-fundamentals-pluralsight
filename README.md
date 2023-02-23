@@ -5848,4 +5848,62 @@ foreach (Employee employee in employees)
 
 <!-- #endregion -->
 
+<!-- #region Understanding Object-oriented Programming Principles -->
+
+<details>
+<summary>Understanding Object-oriented Programming Principles</summary>
+
+<br/>
+
+Object-oriented Programming in C#
+
+- Programming paradigm
+- C# is an OO language
+- Focus on classes and objects
+
+Structure os Object-oriented Programming
+
+- Classes
+- Objects
+- Methods
+- Properties
+
+The Four Pillars of OO
+
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+
+Encapsulation
+
+- Containing information inside object
+- Only certain information is exposed
+- Hides internal implementation and data
+- Avoid data corruption
+- Private & public
+
+Abstraction
+
+- Abstract representation of the program
+- Only mechanisms useful for other objects are revealed
+  - Implementation is hidden
+  - Making changes becomes easier
+
+Inheritance
+
+- Classes can reuse functionality from others
+- Relation between classes
+- Lower development time because of reusability
+
+Polymorphism
+
+- Share behaviors but can be in more than one from
+- Child can be used like its parent
+- Correct method will be used based on execution
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
