@@ -5303,4 +5303,84 @@ using BethanysPieShopHRM.Logic;
 
 <!-- #endregion -->
 
+<!-- #region Understanding Arrays -->
+
+<details>
+<summary>Understanding Arrays</summary>
+
+<br/>
+
+The Need for Lists of Data
+
+- List of
+  - Employees
+  - Songs
+  - Records in a database
+  - ...
+- Impossible to just use variables
+  - Amount of items coming in is unknown
+
+Working with Lists of Data
+
+- Arrays
+- Collections
+
+Arrays in C#
+
+- Data structure to store multiple variables
+- All variables must have the same type (can be object)
+- Accessed through use of index
+
+Creating an Array Variable
+
+```c#
+int [] allEmployeeIds;
+DateTime[] startDates;
+```
+
+| Type of array | Variable name  |
+| :------------ | :------------- |
+| int[]         | allEmployeeIds |
+| DateTime[]    | startDate      |
+
+Instantiating the Array
+
+![](./assets/instantiating-the-array.png)
+
+- Arrays are reference types, even for value types used in the array
+- Creation happens upon using new
+- Size is set upon creation of the array, but can be at runtime
+- Arrays are zero-based
+
+Determining the Array Size at Runtime
+
+```c#
+int size = int.Parse(Console.ReadLine());
+int[] employeeIds = new int[size];
+```
+
+Populating the Array
+
+```c#
+int[] allEmployeeIds = new int[4] {11,44,179,161};
+int[] managerIds = new int[4] {11,44,179}; // compiler error
+int[] supportStaffIds = new int[] {11,44};
+```
+
+Accessing Elements within the Array
+
+```c#
+allEmployeeIds[0] = 123;
+
+int firstEmployeeId = allEmployeeIds[0];
+int secondEmployeeId = allEmployeeIds[1];
+
+allEmployeeIds[2] = 33;
+allEmployeeIds[7] = 33; // runtimeerror
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
