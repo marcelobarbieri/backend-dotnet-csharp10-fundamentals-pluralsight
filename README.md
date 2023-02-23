@@ -5631,4 +5631,58 @@ for (int i = 0; i < employeeIdsCopy.Length; i++)
 
 <!-- #endregion -->
 
+<!-- #region Working with Collections -->
+
+<details>
+<summary>Working with Collections</summary>
+
+<br/>
+
+Arrays are somewhat limited...
+
+- Changing the size is hard
+- Accessing the items is limited
+- Collections can be a better solution!
+
+Creating a List
+
+- Can contain int values
+
+```c#
+List<int> employeeIds = new List<int>();
+```
+
+Working with the List<T>
+
+- Adding items is done using a method
+
+```c#
+List<int> employeeIds = new List<int>();
+
+employeeIds.Add(1);
+employeeIds.Add(99);
+employeeIds.Add(458);
+
+employeeIds.Remove(1);
+
+int selectedId = employeeIds[2];
+```
+
+List Know Their Length
+
+```c#
+int length = employeeIds.Count;
+```
+
+Lists are Type-safe
+
+```c#
+List<int> employeeIds = new List<int>();
+employeeIds.Add(new Employee()); // error
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
