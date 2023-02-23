@@ -5697,6 +5697,7 @@ Working with the Collection classes
 List: class System.Collections.Generic.List<T>
 
 Program.cs
+
 ```c#
 using BethanysPieShopHRM.HR;
 
@@ -5753,50 +5754,50 @@ foreach (Employee employee in employees)
 }
 
 /* Output:
- * 
+ *
  * 78 is found!
  * How many employees IDs do you want to register?
  * 3
  * Enter the employee ID: 14
  * Enter the employee ID: 78
  * Enter the employee ID: 96
- * 
+ *
  * First name:     Bethany
  * Last name:      Smith
  * E-mail:                 bethany@snowball.be
  * Birthday:       16/01/1979
  * Tax rate:       0,15
- * 
+ *
  * First name:     George
  * Last name:      Jones
  * E-mail:                 george@snowball.be
  * Birthday:       28/03/1984
  * Tax rate:       0,15
- * 
+ *
  * First name:     Mary
  * Last name:      Jones
  * E-mail:                 mary@snowball.be
  * Birthday:       16/01/1965
  * Tax rate:       0,15
- * 
+ *
  * First name:     Bob
  * Last name:      Spencer
  * E-mail:                 bob@snowball.be
  * Birthday:       23/01/1988
  * Tax rate:       0,15
- * 
+ *
  * First name:     Kevin
  * Last name:      Marks
  * E-mail:                 kevin@snowball.be
  * Birthday:       12/12/1953
  * Tax rate:       0,15
- * 
+ *
  * First name:     Kate
  * Last name:      Greggs
  * E-mail:                 kate@snowball.be
  * Birthday:       08/08/1993
  * Tax rate:       0,15
- * 
+ *
  * First name:     Kim
  * Last name:      Jacobs
  * E-mail:                 kim@snowball.be
@@ -5804,6 +5805,21 @@ foreach (Employee employee in employees)
  * Tax rate:       0,15
  */
 ```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Arrays allow us to work with simple sequences
+- Are reference types
+- Collection classes are more flexible
 
 </details>
 
