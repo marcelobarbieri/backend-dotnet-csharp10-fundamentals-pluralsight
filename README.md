@@ -5264,4 +5264,22 @@ using BethanysPieShopHRM.Logic;
 
 <!-- #endregion -->
 
+<!-- #region Summary -->
+
+<details>
+<summary>Summary</summary>
+
+<br/>
+
+- Namespaces are used to group classes
+- Static data is class-level data
+- References can be null
+  - Can cause null reference exceptions
+  - Garbage collection will clean up unused objects
+- Use classes from an external library
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
