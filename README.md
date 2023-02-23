@@ -5283,3 +5283,24 @@ using BethanysPieShopHRM.Logic;
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Using Arrays and Lists -->
+
+## Using Arrays and Lists
+
+<!-- #region Introduction -->
+
+<details>
+<summary>Introduction</summary>
+
+<br/>
+
+- Understanding arrays
+- Working with arrays
+- Working with collections
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
