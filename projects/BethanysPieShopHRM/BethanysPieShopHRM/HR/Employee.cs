@@ -140,7 +140,7 @@ namespace BethanysPieShopHRM.HR
         public double CalculateWage()
         {
             WageCalculations wageCalculations = new WageCalculations();
-            double calculateValue = wageCalculations.ComplexWageCalculation(wage, taxRage, 3, 42);
+            double calculateValue = wageCalculations.ComplexWageCalculation(wage, taxRate, 3, 42);
             return calculateValue;
         }
     }
