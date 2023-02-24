@@ -6479,4 +6479,27 @@ public class Manager: Employee
 
 <!-- #endregion -->
 
+<!-- #region The "Is-A" Relation -->
+
+<details>
+<summary>The "Is-A" Relation</summary>
+
+<br/>
+
+![](./assets/the-is-a-relation.png)
+
+Using the Base Type
+- Using the Is-A relation
+
+```c#
+Manager m1 = new Manager(); // Manager derives from Employee
+Researcher r2 = new Researcher(); // Researcher derives from Employee
+m1.PerformWork(); // Will call PerformWork() on the base Employee class
+r2.PerformWork(); // Will call PerformWork() on the base Employee class
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
