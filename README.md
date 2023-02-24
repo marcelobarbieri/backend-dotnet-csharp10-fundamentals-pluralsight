@@ -6300,4 +6300,166 @@ Using Inheritance in C#
 
 <!-- #endregion -->
 
+<!-- #region Creating a Base and Derived Class -->
+
+<details>
+<summary>Creating a Base and Derived Class</summary>
+
+<br/>
+
+<details>
+<summary>Base and Derived Classes</summary>
+
+<br/>
+
+```c#
+public class BaseClass
+{
+
+}
+
+public class DerivedClass: BaseClass
+{
+
+}
+```
+
+</details>
+
+<details>
+<summary>Creating the Base and Derived Class</summary>
+
+<br/>
+
+Employee
+
+```c#
+public class Employee
+{
+
+}
+```
+
+Manager
+
+```c#
+public class Manager: Employee
+{
+
+}
+```
+
+</details>
+
+<details>
+<summary>Accessing the Base Class Members</summary>
+
+<br/>
+
+Employee
+
+```c#
+public class Employee
+{
+  public string name;
+
+  public void PerformWork()
+  {
+
+  }
+}
+```
+
+Manager
+
+```c#
+public class Manager: Employee
+{
+  public void DisplayManagerData()
+  {
+    Console.WriteLine(name);
+  }
+}
+```
+
+</details>
+
+<br/>
+
+Revisiting Access Modifiers
+
+- public
+- private
+- protected
+
+<details>
+<summary>Accessing the Base Class Members (private)</summary>
+
+<br/>
+
+Employee
+
+```c#
+public class Employee
+{
+  private string name;
+
+  public void PerformWork()
+  {
+
+  }
+}
+```
+
+Manager
+
+```c#
+public class Manager: Employee
+{
+  public void DisplayManagerData()
+  {
+    Console.WriteLine(name); // error
+  }
+}
+```
+
+</details>
+
+<details>
+<summary>Accessing the Base Class Members (protected)</summary>
+
+<br/>
+
+Employee
+
+```c#
+public class Employee
+{
+  protected string name;
+
+  public void PerformWork()
+  {
+
+  }
+}
+```
+
+Manager
+
+```c#
+public class Manager: Employee
+{
+  public void DisplayManagerData()
+  {
+    Console.WriteLine(name); // ok
+  }
+}
+```
+
+</details>
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
