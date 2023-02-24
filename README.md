@@ -6272,4 +6272,32 @@ namespace BethanysPieShopHRM.HR
 
 <!-- #endregion -->
 
+<!-- #region Bringing in Inheritance -->
+
+<details>
+<summary>Bringing in Inheritance</summary>
+
+<br/>
+
+Diferente Types of Employees
+
+![](./assets/different-types-of-employees-1.png)
+![](./assets/different-types-of-employees-2.png)
+
+Introducing Inheritance
+
+- Important concept in object-oriented development
+- Class gets data and functionality from parent
+
+Using Inheritance in C#
+
+- Parent (or base) and derived class
+- Reuse code
+- Easier to maintain
+- Can be one or more levels deep
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
