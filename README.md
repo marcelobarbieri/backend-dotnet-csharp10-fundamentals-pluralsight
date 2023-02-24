@@ -6462,4 +6462,21 @@ public class Manager: Employee
 
 <!-- #endregion -->
 
+<!-- #region Demo: Creating a Base and Derived Class -->
+
+<details>
+<summary>Demo: Creating a Base and Derived Class</summary>
+
+<br/>
+
+- Creating a base class
+- Building a derived class
+- Access the base class´ members
+
+> Code on commit
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->

@@ -16,7 +16,6 @@ namespace BethanysPieShopHRM.HR
 
         private DateTime birthDay;
         private const int minimalHoursWorkedUnit = 1;
-        private EmployeeType employeeType;
 
         private static double taxRate = 0.15;
 
@@ -41,7 +40,7 @@ namespace BethanysPieShopHRM.HR
         public int NumberOfHoursWorked
         {
             get { return numberOfHoursWorked; }
-            private set { numberOfHoursWorked = value; }
+            protected set { numberOfHoursWorked = value; }
         }
 
         public double Wage
@@ -71,14 +70,8 @@ namespace BethanysPieShopHRM.HR
             }
         }
 
-        public EmployeeType EmployeeType
-        {
-            get { return employeeType;  }
-            set { employeeType = value; }
-        }
-
         public Employee(string firstName, string lastName, string email, DateTime birthDay) 
-            : this(firstName, lastName, email, birthDay, 0, EmployeeType.StoreManager)
+            : this(firstName, lastName, email, birthDay, 0)
         { }
 
         public Employee(
@@ -86,15 +79,13 @@ namespace BethanysPieShopHRM.HR
             string lastName, 
             string email, 
             DateTime birthDay, 
-            double? hourlyRate, 
-            EmployeeType employeeType)
+            double? hourlyRate)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
             BirthDay = birthDay;
             HourlyRate = hourlyRate ?? 10;
-            EmployeeType = employeeType;
         }
 
         public void PerformWork()
@@ -113,17 +104,6 @@ namespace BethanysPieShopHRM.HR
         public double ReceiveWage(bool resetHours = true)
         {
             double wageBeforeTax = 0.0;
-
-            if (EmployeeType == EmployeeType.Manager)
-            {
-                Console.WriteLine($"An extra was added to the wage since {FirstName} is a manager!");
-                wageBeforeTax = NumberOfHoursWorked * HourlyRate.Value * 1.25;
-            }
-            else
-            {
-                wageBeforeTax = NumberOfHoursWorked * HourlyRate.Value;
-            }
-
             double taxAmount = wageBeforeTax * taxRate;
 
             Wage = wageBeforeTax - taxAmount;
