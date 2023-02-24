@@ -6489,6 +6489,7 @@ public class Manager: Employee
 ![](./assets/the-is-a-relation.png)
 
 Using the Base Type
+
 - Using the Is-A relation
 
 ```c#
@@ -6497,6 +6498,30 @@ Researcher r2 = new Researcher(); // Researcher derives from Employee
 m1.PerformWork(); // Will call PerformWork() on the base Employee class
 r2.PerformWork(); // Will call PerformWork() on the base Employee class
 ```
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo: The "Is-A" Relation -->
+
+<details>
+<summary>Demo: The "Is-A" Relation</summary>
+
+<br/>
+
+- Using the `Is-A` reation
+
+Program.cs
+
+```c#
+Employee mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965,1,16), 30);
+
+Researcher bobJunior = new JuniorResearcher("Bob","Spencer","bob@snowball.be", new DateTime(1988,1,23),17);
+```
+
+- Manager is-A Employee
+- JuniorResearcher is-A Researcher
 
 </details>
 
