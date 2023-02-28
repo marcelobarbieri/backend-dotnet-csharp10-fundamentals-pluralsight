@@ -6872,4 +6872,61 @@ Kate Greggs received a generic bonus of 100!
 
 <!-- #endregion -->
 
+<!-- #region Introducing Interfaces -->
+
+<details>
+<summary>Introducing Interfaces</summary>
+
+<br/>
+
+Recap: The Different Custom Categories of Types
+
+- Enum
+- Struct
+- Class
+- Interface
+- Delegate
+
+Understanding C# Interfaces
+
+- Define a contract that must be implemented by classes that use it
+
+A Sample Interface
+
+```c#
+public interface IEmployee
+{
+  void PerformWork();
+  int ReceiveWage();
+}
+```
+
+Implementing an Interface
+
+```c#
+public void Manager: IEmployee
+{
+  public void PerformWork()
+  {
+    ...
+  }
+
+  public int ReceiveWage()
+  {
+    ...
+  }
+}
+```
+
+Using Polymorphism with Interfaces
+
+```c#
+IEmployee e1 = new Manager();
+e1.PerformWork();
+```
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
