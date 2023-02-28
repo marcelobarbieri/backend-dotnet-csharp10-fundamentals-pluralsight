@@ -6670,4 +6670,78 @@ string streetName = jake.Address.Street;
 
 <!-- #endregion -->
 
+<!-- #region Using Polymorphism -->
+
+<details>
+<summary>Using Polymorphism</summary>
+
+<br/>
+
+Using a Base Method
+
+![](./assets/using-a-base-method.png)
+
+> The invoked method will be the same for all inheriting types
+
+<br/>
+
+Introducing Polymorphism
+
+- Override a base class method with a new implementation
+- "Poly" & "morph"
+- Uses `virtual` and `override` keywords
+
+Employee.cs
+
+```c#
+public class Employee
+{
+  public virtual void PerformWork()
+  { ... }
+}
+```
+
+Manager.cs
+
+```c#
+public class Manager: Employee
+{
+  public override void PerformWork()
+  { ... }
+}
+```
+
+Using Polymorphism in C#
+
+![](./assets/using-polymorphism-1.png)
+![](./assets/using-polymorphism-2.png)
+![](./assets/using-polymorphism-3.png)
+![](./assets/using-polymorphism-4.png)
+
+<br/>
+
+Using Polymorphism
+
+```c#
+Employee e1 = new Manager();
+Employee e2 = new Researcher();
+e1.PerformWork(); // will call the most specific version, so the on on Manager
+e2.PerformWork(); // will call the most specific version, so the on on Researcher
+e1.AttendManagementMeeting(); // error if defined on Manager derived type
+```
+
+Looping over an Array of Employee References
+
+![](./assets/looping-over-an-array-of-employee-references-1.png)
+![](./assets/looping-over-an-array-of-employee-references-2.png)
+![](./assets/looping-over-an-array-of-employee-references-3.png)
+
+</details>
+
 <!-- #endregion -->
+
+<!-- #endregion -->
+
+```
+
+```
