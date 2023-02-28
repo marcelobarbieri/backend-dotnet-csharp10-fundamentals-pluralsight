@@ -4,6 +4,9 @@ Employee bethany = new Employee("Bethany","Smith","bethany@snowball.be", new Dat
 Employee mary = new Manager("Mary", "Jones", "mary@snowball.be", new DateTime(1965,1,16), 30);
 Researcher bobJunior = new JuniorResearcher("Bob","Spencer","bob@snowball.be", new DateTime(1988,1,23),17);
 
+Employee jake = new Employee("Jake","Nicols","jake@snowball.be", new DateTime(1995,8,16),25,"New street","123","123456","Pie Ville");
+string streetName = jake.Address.Street;
+
 bethany.DisplayEmployeeDetails();
 bethany.PerformWork(8);
 bethany.PerformWork();

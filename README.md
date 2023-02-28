@@ -6510,7 +6510,7 @@ r2.PerformWork(); // Will call PerformWork() on the base Employee class
 
 <br/>
 
-- Using the `Is-A` reation
+- Using the `Is-A` relation
 
 Program.cs
 
@@ -6522,6 +6522,149 @@ Researcher bobJunior = new JuniorResearcher("Bob","Spencer","bob@snowball.be", n
 
 - Manager is-A Employee
 - JuniorResearcher is-A Researcher
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Demo: Understanding Composition -->
+
+<details>
+<summary>Demo: Understanding Composition</summary>
+
+<br/>
+
+![](./assets/understanding-composition-1.png)
+
+- Adding a class to model the Address
+
+<details>
+<summary>Address.cs</summary>
+
+<br/>
+
+```c#
+namespace BethanysPieShopHRM.HR
+{
+    internal class Address
+    {
+        private string street;
+        private string houseNumber;
+        private string zipCode;
+        private string city;
+
+        public Address(string street, string houseNumber, string zipCode, string city)
+        {
+            Street = street;
+            HouseNumber = houseNumber;
+            ZipCode = zipCode;
+            City = city;
+        }
+
+        public string Street
+        {
+            get { return street; }
+            set
+            {
+                street = value;
+            }
+        }
+
+        public string HouseNumber
+        {
+            get { return houseNumber; }
+            set {
+                houseNumber = value;
+            }
+        }
+
+        public string ZipCode
+        {
+            get { return zipCode; }
+            set
+            {
+                zipCode = value;
+            }
+        }
+
+        public string City
+        {
+            get { return city; }
+            set
+            {
+                city = value;
+            }
+        }
+    }
+}
+
+```
+
+</details>
+
+<details>
+<summary>Employee.cs</summary>
+
+</br>
+
+```c#
+
+...
+
+        private Address address;
+
+        public Address Address
+        {
+            get { return address;  }
+            set
+            {
+                address = value;
+            }
+        }
+
+        public Employee(
+            string firstName,
+            string lastName,
+            string email,
+            DateTime birthDay,
+            double? hourlyRate,
+            string street,
+            string houseNumber,
+            string zip,
+            string city)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            BirthDay = birthDay;
+            HourlyRate = hourlyRate ?? 10;
+
+            Address = new Address(street, houseNumber, zip, city);
+        }
+
+...
+
+```
+
+</details>
+
+<details>
+<summary>Program.cs</summary>
+
+</br>
+
+```c#
+
+...
+
+Employee jake = new Employee("Jake","Nicols","jake@snowball.be", new DateTime(1995,8,16),25,"New street","123","123456","Pie Ville");
+string streetName = jake.Address.Street;
+
+...
+
+```
+
+</details>
 
 </details>
 

@@ -17,6 +17,8 @@ namespace BethanysPieShopHRM.HR
         private DateTime birthDay;
         private const int minimalHoursWorkedUnit = 1;
 
+        private Address address;
+
         private static double taxRate = 0.15;
 
         public string FirstName
@@ -70,6 +72,15 @@ namespace BethanysPieShopHRM.HR
             }
         }
 
+        public Address Address
+        {
+            get { return address;  }
+            set
+            {
+                address = value;
+            }
+        }
+
         public Employee(string firstName, string lastName, string email, DateTime birthDay) 
             : this(firstName, lastName, email, birthDay, 0)
         { }
@@ -86,6 +97,26 @@ namespace BethanysPieShopHRM.HR
             Email = email;
             BirthDay = birthDay;
             HourlyRate = hourlyRate ?? 10;
+        }
+
+        public Employee(
+            string firstName,
+            string lastName,
+            string email,
+            DateTime birthDay,
+            double? hourlyRate,
+            string street,
+            string houseNumber,
+            string zip,
+            string city)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            BirthDay = birthDay;
+            HourlyRate = hourlyRate ?? 10;
+
+            Address = new Address(street, houseNumber, zip, city);
         }
 
         public void PerformWork()
