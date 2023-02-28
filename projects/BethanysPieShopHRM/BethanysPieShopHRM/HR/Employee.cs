@@ -1,10 +1,9 @@
 ﻿using BethanysPieShopHRM.Logic;
 using Newtonsoft.Json;
-using System.Net;
 
 namespace BethanysPieShopHRM.HR
 {
-    internal class Employee
+    internal class Employee: IEmployee
     {
         private string firstName;
         private string lastName;
@@ -218,6 +217,11 @@ namespace BethanysPieShopHRM.HR
         public virtual void GiveBonus()
         {
             Console.WriteLine($"{FirstName} {LastName} received a generic bonus of 100!");
+        }
+
+        public void GiveCompliment()
+        {
+            Console.WriteLine($"Youpve done a great job, {FirstName}");
         }
     }
 }
