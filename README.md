@@ -7165,4 +7165,79 @@ Output
 
 <!-- #endregion -->
 
+<!-- #region Writing a Unit Test -->
+
+<details>
+<summary>Writing a Unit Test</summary>
+
+<br/>
+
+We aren´t perfect...
+
+- Introducing new bugs is easy!
+- We can try harnessing out code using a unit test
+
+Introducint Unit Tests
+
+- Code to test other code
+- Small components of the application
+- Validate value
+- Isolate part of the code
+
+Advantages of Unit Tests
+
+- Find Bugs
+- Change without fear of breaking something
+- Improve quality
+- Documentation of the code
+
+Creating a Unit Test Project
+
+- NUnit
+- xUnit
+
+![](./assets/creating-a-unit-test-project-1.png)
+
+Sidestep: Adding a Reference
+
+> It will be necessary include de project that will be tested to the test project adding a reference
+
+![](./assets/sidestep-adding-a-reference.png)
+
+Structure of a Unit Test
+
+- Arrange
+- Act
+- Assert
+
+Writing a Unit Test
+
+```c#
+public class EmployeeTests
+{
+  [Fact]
+  public void PerformWork_Adds_DefaultNumberOfHours_IfNoValueSpecified()
+  {
+    // Arrange
+    Employee employee = new Employee(...);
+
+    // Act
+    employee.PerformWork();
+
+    // Assert
+    Assert.Equal(1, employee.NumberOfHoursWorked);
+  }
+}
+```
+
+Running Tests with Test Explorer
+
+- Test > Test Explorer
+
+![](./assets/running-tests-with-test-explorer.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
