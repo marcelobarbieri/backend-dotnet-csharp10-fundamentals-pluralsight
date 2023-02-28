@@ -7109,4 +7109,32 @@ Youpve done a great job, Kate
 
 <!-- #endregion -->
 
+<!-- #region Testing Your Application Using Debugger -->
+
+<details>
+<summary>Testing Your Application Using the Debugger</summary>
+
+<br/>
+
+Using the Debugger
+
+- Run in Debug mode
+- Breakpoints
+- Stepping through the code
+
+![](./assets/using-break-mode-and-breakpoints.png)
+
+Debugger Commands
+
+|  Keyboard   | Description     |
+| :---------: | :-------------- |
+|     F5      | start debugging |
+|     F10     | step over       |
+|     F11     | step into       |
+| Shift + F11 | step out        |
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
