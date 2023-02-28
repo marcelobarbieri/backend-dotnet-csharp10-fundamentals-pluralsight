@@ -214,5 +214,10 @@ namespace BethanysPieShopHRM.HR
             double calculateValue = wageCalculations.ComplexWageCalculation(Wage, taxRate, 3, 42);
             return calculateValue;
         }
+
+        public virtual void GiveBonus()
+        {
+            Console.WriteLine($"{FirstName} {LastName} received a generic bonus of 100!");
+        }
     }
 }
