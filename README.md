@@ -7068,16 +7068,22 @@ Youpve done a great job, Kate
 
 </details>
 
+</details>
+
+<!-- #endregion -->
+
+<!-- #region Summary -->
+
 <details>
-<summary></summary>
+<summary>Summary</summary>
 
 <br/>
 
-```c#
-
-```
-
-</details>
+- C# fully supports object-oriented programming
+- Properties help with encapsulation
+- Inheritance helps with code reuse
+- Polymorphism allows giving a specific implementation
+- Interfaces define a contract all implementing types need to adhere to
 
 </details>
 
