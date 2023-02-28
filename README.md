@@ -7137,4 +7137,32 @@ Debugger Commands
 
 <!-- #endregion -->
 
+<!-- #region Demo: Using the Debugger -->
+
+<details>
+<summary>Demo: Using the Debugger</summary>
+
+<br/>
+
+- Using the debugger
+- Understanding the debugger windows
+
+> Debug > Windows ...
+
+Autos
+
+![](./assets/demo-debugger-1.png)
+
+Watch
+
+![](./assets/demo-debugger-2.png)
+
+Output
+
+![](./assets/demo-debugger-3.png)
+
+</details>
+
+<!-- #endregion -->
+
 <!-- #endregion -->
