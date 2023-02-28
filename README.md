@@ -7090,3 +7090,23 @@ Youpve done a great job, Kate
 <!-- #endregion -->
 
 <!-- #endregion -->
+
+<!-- #region Testing C# Code -->
+
+## Testing C# Code
+
+<!-- #region Introduction -->
+
+<details>
+<summary>Introduction</summary>
+
+<br/>
+
+- Testing your application using the debugger
+- Writing a unit test
+
+</details>
+
+<!-- #endregion -->
+
+<!-- #endregion -->
